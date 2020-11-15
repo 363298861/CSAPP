@@ -1,0 +1,4340 @@
+Measuring performance with gettimeofday().
+
+Testing mm malloc
+Reading tracefile: traces/amptjp.rep
+Checking mm_malloc for correctness, The boundary is extended to 0xf6945020 and size is 4096
+case 1
+The initial position is 0xf6944018
+Allocating memory of size 2040 at line 0 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6944020, the value is 4096
+The position inside chunk is 0xf6944020
+The size needed to be allocated is 2048
+ within 4096
+The pred and succ is 0 and 0
+2048 is put at 0xf694401c and 0xf6944818
+2048 is put at 0xf694481c and 0xf6945018
+Allocating memory of size 2040 at line 1 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6944820, the value is 2048
+The position inside chunk is 0xf6944820
+The size needed to be allocated is 2048
+ within 2048
+The pred and succ is 0 and 0
+2048 is put at 0xf694481c and 0xf6945018
+Allocating memory of size 48 at line 2 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6946020 and size is 4096
+case 1
+The position outside chunk is 0xf6945020
+The size needed to be allocated is 56
+ within 4096
+The pred and succ is 0 and 0
+56 is put at 0xf694501c and 0xf6945050
+4040 is put at 0xf6945054 and 0xf6946018
+Allocating memory of size 4072 at line 3 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6945058, the value is 4040
+The boundary is extended to 0xf6947020 and size is 4096
+The value in next pointer 0xf6947020 is 1
+The value in previous 0xf6945058 header is 4040 and in previous foot is 4040
+The size of ptr is 4096 and previous is 4040
+case 3
+The free list pointer in coalesce is at 0xf6945058
+The position outside chunk is 0xf6945058
+The size needed to be allocated is 4080
+ within 8136
+The pred and succ is 0 and 0
+4080 is put at 0xf6945054 and 0xf6946040
+4056 is put at 0xf6946044 and 0xf6947018
+Allocating memory of size 4072 at line 4 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6946048, the value is 4056
+The boundary is extended to 0xf6948020 and size is 4096
+The value in next pointer 0xf6948020 is 1
+The value in previous 0xf6946048 header is 4056 and in previous foot is 4056
+The size of ptr is 4096 and previous is 4056
+case 3
+The free list pointer in coalesce is at 0xf6946048
+The position outside chunk is 0xf6946048
+The size needed to be allocated is 4080
+ within 8152
+The pred and succ is 0 and 0
+4080 is put at 0xf6946044 and 0xf6947030
+4072 is put at 0xf6947034 and 0xf6948018
+Allocating memory of size 4072 at line 5 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6947038, the value is 4072
+The boundary is extended to 0xf6949020 and size is 4096
+The value in next pointer 0xf6949020 is 1
+The value in previous 0xf6947038 header is 4072 and in previous foot is 4072
+The size of ptr is 4096 and previous is 4072
+case 3
+The free list pointer in coalesce is at 0xf6947038
+The position outside chunk is 0xf6947038
+The size needed to be allocated is 4080
+ within 8168
+The pred and succ is 0 and 0
+4080 is put at 0xf6947034 and 0xf6948020
+4088 is put at 0xf6948024 and 0xf6949018
+Allocating memory of size 4072 at line 6 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6948028, the value is 4088
+The position inside chunk is 0xf6948028
+The size needed to be allocated is 4080
+ within 4088
+The pred and succ is 0 and 0
+4080 is put at 0xf6948024 and 0xf6949010
+Allocating memory of size 4072 at line 7 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf694a020 and size is 4096
+case 1
+The position outside chunk is 0xf6949020
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf694901c and 0xf694a008
+Allocating memory of size 4072 at line 8 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf694b020 and size is 4096
+case 1
+The position outside chunk is 0xf694a020
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf694a01c and 0xf694b008
+Allocating memory of size 1008 at line 9 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf694c020 and size is 4096
+case 1
+The position outside chunk is 0xf694b020
+The size needed to be allocated is 1016
+ within 4096
+The pred and succ is 0 and 0
+1016 is put at 0xf694b01c and 0xf694b410
+3080 is put at 0xf694b414 and 0xf694c018
+Allocating memory of size 504 at line 10 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694b418, the value is 3080
+The position inside chunk is 0xf694b418
+The size needed to be allocated is 512
+ within 3080
+The pred and succ is 0 and 0
+512 is put at 0xf694b414 and 0xf694b610
+2568 is put at 0xf694b614 and 0xf694c018
+Allocating memory of size 1008 at line 11 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694b618, the value is 2568
+The position inside chunk is 0xf694b618
+The size needed to be allocated is 1016
+ within 2568
+The pred and succ is 0 and 0
+1016 is put at 0xf694b614 and 0xf694ba08
+1552 is put at 0xf694ba0c and 0xf694c018
+Allocating memory of size 42 at line 12 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694ba10, the value is 1552
+The position inside chunk is 0xf694ba10
+The size needed to be allocated is 56
+ within 1552
+The pred and succ is 0 and 0
+56 is put at 0xf694ba0c and 0xf694ba40
+1496 is put at 0xf694ba44 and 0xf694c018
+Allocating memory of size 4072 at line 13 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694ba48, the value is 1496
+The boundary is extended to 0xf694d020 and size is 4096
+The value in next pointer 0xf694d020 is 1
+The value in previous 0xf694ba48 header is 1496 and in previous foot is 1496
+The size of ptr is 4096 and previous is 1496
+case 3
+The free list pointer in coalesce is at 0xf694ba48
+The position outside chunk is 0xf694ba48
+The size needed to be allocated is 4080
+ within 5592
+The pred and succ is 0 and 0
+4080 is put at 0xf694ba44 and 0xf694ca30
+1512 is put at 0xf694ca34 and 0xf694d018
+Allocating memory of size 72 at line 14 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694ca38, the value is 1512
+The position inside chunk is 0xf694ca38
+The size needed to be allocated is 80
+ within 1512
+The pred and succ is 0 and 0
+80 is put at 0xf694ca34 and 0xf694ca80
+1432 is put at 0xf694ca84 and 0xf694d018
+Allocating memory of size 4072 at line 15 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694ca88, the value is 1432
+The boundary is extended to 0xf694e020 and size is 4096
+The value in next pointer 0xf694e020 is 1
+The value in previous 0xf694ca88 header is 1432 and in previous foot is 1432
+The size of ptr is 4096 and previous is 1432
+case 3
+The free list pointer in coalesce is at 0xf694ca88
+The position outside chunk is 0xf694ca88
+The size needed to be allocated is 4080
+ within 5528
+The pred and succ is 0 and 0
+4080 is put at 0xf694ca84 and 0xf694da70
+1448 is put at 0xf694da74 and 0xf694e018
+Allocating memory of size 4072 at line 16 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694da78, the value is 1448
+The boundary is extended to 0xf694f020 and size is 4096
+The value in next pointer 0xf694f020 is 1
+The value in previous 0xf694da78 header is 1448 and in previous foot is 1448
+The size of ptr is 4096 and previous is 1448
+case 3
+The free list pointer in coalesce is at 0xf694da78
+The position outside chunk is 0xf694da78
+The size needed to be allocated is 4080
+ within 5544
+The pred and succ is 0 and 0
+4080 is put at 0xf694da74 and 0xf694ea60
+1464 is put at 0xf694ea64 and 0xf694f018
+Allocating memory of size 4072 at line 17 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694ea68, the value is 1464
+The boundary is extended to 0xf6950020 and size is 4096
+The value in next pointer 0xf6950020 is 1
+The value in previous 0xf694ea68 header is 1464 and in previous foot is 1464
+The size of ptr is 4096 and previous is 1464
+case 3
+The free list pointer in coalesce is at 0xf694ea68
+The position outside chunk is 0xf694ea68
+The size needed to be allocated is 4080
+ within 5560
+The pred and succ is 0 and 0
+4080 is put at 0xf694ea64 and 0xf694fa50
+1480 is put at 0xf694fa54 and 0xf6950018
+Allocating memory of size 4072 at line 18 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf694fa58, the value is 1480
+The boundary is extended to 0xf6951020 and size is 4096
+The value in next pointer 0xf6951020 is 1
+The value in previous 0xf694fa58 header is 1480 and in previous foot is 1480
+The size of ptr is 4096 and previous is 1480
+case 3
+The free list pointer in coalesce is at 0xf694fa58
+The position outside chunk is 0xf694fa58
+The size needed to be allocated is 4080
+ within 5576
+The pred and succ is 0 and 0
+4080 is put at 0xf694fa54 and 0xf6950a40
+1496 is put at 0xf6950a44 and 0xf6951018
+Allocating memory of size 4072 at line 19 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6950a48, the value is 1496
+The boundary is extended to 0xf6952020 and size is 4096
+The value in next pointer 0xf6952020 is 1
+The value in previous 0xf6950a48 header is 1496 and in previous foot is 1496
+The size of ptr is 4096 and previous is 1496
+case 3
+The free list pointer in coalesce is at 0xf6950a48
+The position outside chunk is 0xf6950a48
+The size needed to be allocated is 4080
+ within 5592
+The pred and succ is 0 and 0
+4080 is put at 0xf6950a44 and 0xf6951a30
+1512 is put at 0xf6951a34 and 0xf6952018
+Allocating memory of size 4072 at line 20 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6951a38, the value is 1512
+The boundary is extended to 0xf6953020 and size is 4096
+The value in next pointer 0xf6953020 is 1
+The value in previous 0xf6951a38 header is 1512 and in previous foot is 1512
+The size of ptr is 4096 and previous is 1512
+case 3
+The free list pointer in coalesce is at 0xf6951a38
+The position outside chunk is 0xf6951a38
+The size needed to be allocated is 4080
+ within 5608
+The pred and succ is 0 and 0
+4080 is put at 0xf6951a34 and 0xf6952a20
+1528 is put at 0xf6952a24 and 0xf6953018
+Allocating memory of size 4072 at line 21 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6952a28, the value is 1528
+The boundary is extended to 0xf6954020 and size is 4096
+The value in next pointer 0xf6954020 is 1
+The value in previous 0xf6952a28 header is 1528 and in previous foot is 1528
+The size of ptr is 4096 and previous is 1528
+case 3
+The free list pointer in coalesce is at 0xf6952a28
+The position outside chunk is 0xf6952a28
+The size needed to be allocated is 4080
+ within 5624
+The pred and succ is 0 and 0
+4080 is put at 0xf6952a24 and 0xf6953a10
+1544 is put at 0xf6953a14 and 0xf6954018
+Allocating memory of size 4072 at line 22 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6953a18, the value is 1544
+The boundary is extended to 0xf6955020 and size is 4096
+The value in next pointer 0xf6955020 is 1
+The value in previous 0xf6953a18 header is 1544 and in previous foot is 1544
+The size of ptr is 4096 and previous is 1544
+case 3
+The free list pointer in coalesce is at 0xf6953a18
+The position outside chunk is 0xf6953a18
+The size needed to be allocated is 4080
+ within 5640
+The pred and succ is 0 and 0
+4080 is put at 0xf6953a14 and 0xf6954a00
+1560 is put at 0xf6954a04 and 0xf6955018
+Allocating memory of size 4072 at line 23 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6954a08, the value is 1560
+The boundary is extended to 0xf6956020 and size is 4096
+The value in next pointer 0xf6956020 is 1
+The value in previous 0xf6954a08 header is 1560 and in previous foot is 1560
+The size of ptr is 4096 and previous is 1560
+case 3
+The free list pointer in coalesce is at 0xf6954a08
+The position outside chunk is 0xf6954a08
+The size needed to be allocated is 4080
+ within 5656
+The pred and succ is 0 and 0
+4080 is put at 0xf6954a04 and 0xf69559f0
+1576 is put at 0xf69559f4 and 0xf6956018
+Allocating memory of size 40 at line 24 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69559f8, the value is 1576
+The position inside chunk is 0xf69559f8
+The size needed to be allocated is 48
+ within 1576
+The pred and succ is 0 and 0
+48 is put at 0xf69559f4 and 0xf6955a20
+1528 is put at 0xf6955a24 and 0xf6956018
+Allocating memory of size 40 at line 25 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955a28, the value is 1528
+The position inside chunk is 0xf6955a28
+The size needed to be allocated is 48
+ within 1528
+The pred and succ is 0 and 0
+48 is put at 0xf6955a24 and 0xf6955a50
+1480 is put at 0xf6955a54 and 0xf6956018
+Allocating memory of size 40 at line 26 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955a58, the value is 1480
+The position inside chunk is 0xf6955a58
+The size needed to be allocated is 48
+ within 1480
+The pred and succ is 0 and 0
+48 is put at 0xf6955a54 and 0xf6955a80
+1432 is put at 0xf6955a84 and 0xf6956018
+Allocating memory of size 40 at line 27 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955a88, the value is 1432
+The position inside chunk is 0xf6955a88
+The size needed to be allocated is 48
+ within 1432
+The pred and succ is 0 and 0
+48 is put at 0xf6955a84 and 0xf6955ab0
+1384 is put at 0xf6955ab4 and 0xf6956018
+Allocating memory of size 40 at line 28 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955ab8, the value is 1384
+The position inside chunk is 0xf6955ab8
+The size needed to be allocated is 48
+ within 1384
+The pred and succ is 0 and 0
+48 is put at 0xf6955ab4 and 0xf6955ae0
+1336 is put at 0xf6955ae4 and 0xf6956018
+Allocating memory of size 40 at line 29 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955ae8, the value is 1336
+The position inside chunk is 0xf6955ae8
+The size needed to be allocated is 48
+ within 1336
+The pred and succ is 0 and 0
+48 is put at 0xf6955ae4 and 0xf6955b10
+1288 is put at 0xf6955b14 and 0xf6956018
+Allocating memory of size 40 at line 30 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955b18, the value is 1288
+The position inside chunk is 0xf6955b18
+The size needed to be allocated is 48
+ within 1288
+The pred and succ is 0 and 0
+48 is put at 0xf6955b14 and 0xf6955b40
+1240 is put at 0xf6955b44 and 0xf6956018
+Allocating memory of size 40 at line 31 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955b48, the value is 1240
+The position inside chunk is 0xf6955b48
+The size needed to be allocated is 48
+ within 1240
+The pred and succ is 0 and 0
+48 is put at 0xf6955b44 and 0xf6955b70
+1192 is put at 0xf6955b74 and 0xf6956018
+Allocating memory of size 40 at line 32 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955b78, the value is 1192
+The position inside chunk is 0xf6955b78
+The size needed to be allocated is 48
+ within 1192
+The pred and succ is 0 and 0
+48 is put at 0xf6955b74 and 0xf6955ba0
+1144 is put at 0xf6955ba4 and 0xf6956018
+Allocating memory of size 4072 at line 33 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6955ba8, the value is 1144
+The boundary is extended to 0xf6957020 and size is 4096
+The value in next pointer 0xf6957020 is 1
+The value in previous 0xf6955ba8 header is 1144 and in previous foot is 1144
+The size of ptr is 4096 and previous is 1144
+case 3
+The free list pointer in coalesce is at 0xf6955ba8
+The position outside chunk is 0xf6955ba8
+The size needed to be allocated is 4080
+ within 5240
+The pred and succ is 0 and 0
+4080 is put at 0xf6955ba4 and 0xf6956b90
+1160 is put at 0xf6956b94 and 0xf6957018
+Allocating memory of size 456 at line 34 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6956b98, the value is 1160
+The position inside chunk is 0xf6956b98
+The size needed to be allocated is 464
+ within 1160
+The pred and succ is 0 and 0
+464 is put at 0xf6956b94 and 0xf6956d60
+696 is put at 0xf6956d64 and 0xf6957018
+Allocating memory of size 456 at line 35 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6956d68, the value is 696
+The position inside chunk is 0xf6956d68
+The size needed to be allocated is 464
+ within 696
+The pred and succ is 0 and 0
+464 is put at 0xf6956d64 and 0xf6956f30
+232 is put at 0xf6956f34 and 0xf6957018
+Allocating memory of size 456 at line 36 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6956f38, the value is 232
+The boundary is extended to 0xf6958020 and size is 4096
+The value in next pointer 0xf6958020 is 1
+The value in previous 0xf6956f38 header is 232 and in previous foot is 232
+The size of ptr is 4096 and previous is 232
+case 3
+The free list pointer in coalesce is at 0xf6956f38
+The position outside chunk is 0xf6956f38
+The size needed to be allocated is 464
+ within 4328
+The pred and succ is 0 and 0
+464 is put at 0xf6956f34 and 0xf6957100
+3864 is put at 0xf6957104 and 0xf6958018
+Allocating memory of size 456 at line 37 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6957108, the value is 3864
+The position inside chunk is 0xf6957108
+The size needed to be allocated is 464
+ within 3864
+The pred and succ is 0 and 0
+464 is put at 0xf6957104 and 0xf69572d0
+3400 is put at 0xf69572d4 and 0xf6958018
+Allocating memory of size 456 at line 38 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69572d8, the value is 3400
+The position inside chunk is 0xf69572d8
+The size needed to be allocated is 464
+ within 3400
+The pred and succ is 0 and 0
+464 is put at 0xf69572d4 and 0xf69574a0
+2936 is put at 0xf69574a4 and 0xf6958018
+Allocating memory of size 456 at line 39 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69574a8, the value is 2936
+The position inside chunk is 0xf69574a8
+The size needed to be allocated is 464
+ within 2936
+The pred and succ is 0 and 0
+464 is put at 0xf69574a4 and 0xf6957670
+2472 is put at 0xf6957674 and 0xf6958018
+Allocating memory of size 456 at line 40 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6957678, the value is 2472
+The position inside chunk is 0xf6957678
+The size needed to be allocated is 464
+ within 2472
+The pred and succ is 0 and 0
+464 is put at 0xf6957674 and 0xf6957840
+2008 is put at 0xf6957844 and 0xf6958018
+Allocating memory of size 456 at line 41 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6957848, the value is 2008
+The position inside chunk is 0xf6957848
+The size needed to be allocated is 464
+ within 2008
+The pred and succ is 0 and 0
+464 is put at 0xf6957844 and 0xf6957a10
+1544 is put at 0xf6957a14 and 0xf6958018
+Allocating memory of size 456 at line 42 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6957a18, the value is 1544
+The position inside chunk is 0xf6957a18
+The size needed to be allocated is 464
+ within 1544
+The pred and succ is 0 and 0
+464 is put at 0xf6957a14 and 0xf6957be0
+1080 is put at 0xf6957be4 and 0xf6958018
+Allocating memory of size 456 at line 43 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6957be8, the value is 1080
+The position inside chunk is 0xf6957be8
+The size needed to be allocated is 464
+ within 1080
+The pred and succ is 0 and 0
+464 is put at 0xf6957be4 and 0xf6957db0
+616 is put at 0xf6957db4 and 0xf6958018
+Allocating memory of size 456 at line 44 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6957db8, the value is 616
+The position inside chunk is 0xf6957db8
+The size needed to be allocated is 464
+ within 616
+The pred and succ is 0 and 0
+464 is put at 0xf6957db4 and 0xf6957f80
+152 is put at 0xf6957f84 and 0xf6958018
+Allocating memory of size 456 at line 45 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6957f88, the value is 152
+The boundary is extended to 0xf6959020 and size is 4096
+The value in next pointer 0xf6959020 is 1
+The value in previous 0xf6957f88 header is 152 and in previous foot is 152
+The size of ptr is 4096 and previous is 152
+case 3
+The free list pointer in coalesce is at 0xf6957f88
+The position outside chunk is 0xf6957f88
+The size needed to be allocated is 464
+ within 4248
+The pred and succ is 0 and 0
+464 is put at 0xf6957f84 and 0xf6958150
+3784 is put at 0xf6958154 and 0xf6959018
+Allocating memory of size 456 at line 46 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6958158, the value is 3784
+The position inside chunk is 0xf6958158
+The size needed to be allocated is 464
+ within 3784
+The pred and succ is 0 and 0
+464 is put at 0xf6958154 and 0xf6958320
+3320 is put at 0xf6958324 and 0xf6959018
+Allocating memory of size 456 at line 47 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6958328, the value is 3320
+The position inside chunk is 0xf6958328
+The size needed to be allocated is 464
+ within 3320
+The pred and succ is 0 and 0
+464 is put at 0xf6958324 and 0xf69584f0
+2856 is put at 0xf69584f4 and 0xf6959018
+Allocating memory of size 456 at line 48 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69584f8, the value is 2856
+The position inside chunk is 0xf69584f8
+The size needed to be allocated is 464
+ within 2856
+The pred and succ is 0 and 0
+464 is put at 0xf69584f4 and 0xf69586c0
+2392 is put at 0xf69586c4 and 0xf6959018
+Allocating memory of size 456 at line 49 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69586c8, the value is 2392
+The position inside chunk is 0xf69586c8
+The size needed to be allocated is 464
+ within 2392
+The pred and succ is 0 and 0
+464 is put at 0xf69586c4 and 0xf6958890
+1928 is put at 0xf6958894 and 0xf6959018
+Allocating memory of size 456 at line 50 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6958898, the value is 1928
+The position inside chunk is 0xf6958898
+The size needed to be allocated is 464
+ within 1928
+The pred and succ is 0 and 0
+464 is put at 0xf6958894 and 0xf6958a60
+1464 is put at 0xf6958a64 and 0xf6959018
+Allocating memory of size 456 at line 51 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6958a68, the value is 1464
+The position inside chunk is 0xf6958a68
+The size needed to be allocated is 464
+ within 1464
+The pred and succ is 0 and 0
+464 is put at 0xf6958a64 and 0xf6958c30
+1000 is put at 0xf6958c34 and 0xf6959018
+Allocating memory of size 456 at line 52 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6958c38, the value is 1000
+The position inside chunk is 0xf6958c38
+The size needed to be allocated is 464
+ within 1000
+The pred and succ is 0 and 0
+464 is put at 0xf6958c34 and 0xf6958e00
+536 is put at 0xf6958e04 and 0xf6959018
+Allocating memory of size 456 at line 53 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6958e08, the value is 536
+The position inside chunk is 0xf6958e08
+The size needed to be allocated is 464
+ within 536
+The pred and succ is 0 and 0
+464 is put at 0xf6958e04 and 0xf6958fd0
+72 is put at 0xf6958fd4 and 0xf6959018
+Allocating memory of size 456 at line 54 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6958fd8, the value is 72
+The boundary is extended to 0xf695a020 and size is 4096
+The value in next pointer 0xf695a020 is 1
+The value in previous 0xf6958fd8 header is 72 and in previous foot is 72
+The size of ptr is 4096 and previous is 72
+case 3
+The free list pointer in coalesce is at 0xf6958fd8
+The position outside chunk is 0xf6958fd8
+The size needed to be allocated is 464
+ within 4168
+The pred and succ is 0 and 0
+464 is put at 0xf6958fd4 and 0xf69591a0
+3704 is put at 0xf69591a4 and 0xf695a018
+Allocating memory of size 456 at line 55 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69591a8, the value is 3704
+The position inside chunk is 0xf69591a8
+The size needed to be allocated is 464
+ within 3704
+The pred and succ is 0 and 0
+464 is put at 0xf69591a4 and 0xf6959370
+3240 is put at 0xf6959374 and 0xf695a018
+Allocating memory of size 456 at line 56 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6959378, the value is 3240
+The position inside chunk is 0xf6959378
+The size needed to be allocated is 464
+ within 3240
+The pred and succ is 0 and 0
+464 is put at 0xf6959374 and 0xf6959540
+2776 is put at 0xf6959544 and 0xf695a018
+Allocating memory of size 456 at line 57 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6959548, the value is 2776
+The position inside chunk is 0xf6959548
+The size needed to be allocated is 464
+ within 2776
+The pred and succ is 0 and 0
+464 is put at 0xf6959544 and 0xf6959710
+2312 is put at 0xf6959714 and 0xf695a018
+Allocating memory of size 456 at line 58 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6959718, the value is 2312
+The position inside chunk is 0xf6959718
+The size needed to be allocated is 464
+ within 2312
+The pred and succ is 0 and 0
+464 is put at 0xf6959714 and 0xf69598e0
+1848 is put at 0xf69598e4 and 0xf695a018
+Allocating memory of size 456 at line 59 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69598e8, the value is 1848
+The position inside chunk is 0xf69598e8
+The size needed to be allocated is 464
+ within 1848
+The pred and succ is 0 and 0
+464 is put at 0xf69598e4 and 0xf6959ab0
+1384 is put at 0xf6959ab4 and 0xf695a018
+Allocating memory of size 456 at line 60 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6959ab8, the value is 1384
+The position inside chunk is 0xf6959ab8
+The size needed to be allocated is 464
+ within 1384
+The pred and succ is 0 and 0
+464 is put at 0xf6959ab4 and 0xf6959c80
+920 is put at 0xf6959c84 and 0xf695a018
+Allocating memory of size 456 at line 61 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6959c88, the value is 920
+The position inside chunk is 0xf6959c88
+The size needed to be allocated is 464
+ within 920
+The pred and succ is 0 and 0
+464 is put at 0xf6959c84 and 0xf6959e50
+456 is put at 0xf6959e54 and 0xf695a018
+Allocating memory of size 456 at line 62 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6959e58, the value is 456
+The boundary is extended to 0xf695b020 and size is 4096
+The value in next pointer 0xf695b020 is 1
+The value in previous 0xf6959e58 header is 456 and in previous foot is 456
+The size of ptr is 4096 and previous is 456
+case 3
+The free list pointer in coalesce is at 0xf6959e58
+The position outside chunk is 0xf6959e58
+The size needed to be allocated is 464
+ within 4552
+The pred and succ is 0 and 0
+464 is put at 0xf6959e54 and 0xf695a020
+4088 is put at 0xf695a024 and 0xf695b018
+Allocating memory of size 456 at line 63 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695a028, the value is 4088
+The position inside chunk is 0xf695a028
+The size needed to be allocated is 464
+ within 4088
+The pred and succ is 0 and 0
+464 is put at 0xf695a024 and 0xf695a1f0
+3624 is put at 0xf695a1f4 and 0xf695b018
+Allocating memory of size 456 at line 64 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695a1f8, the value is 3624
+The position inside chunk is 0xf695a1f8
+The size needed to be allocated is 464
+ within 3624
+The pred and succ is 0 and 0
+464 is put at 0xf695a1f4 and 0xf695a3c0
+3160 is put at 0xf695a3c4 and 0xf695b018
+Allocating memory of size 456 at line 65 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695a3c8, the value is 3160
+The position inside chunk is 0xf695a3c8
+The size needed to be allocated is 464
+ within 3160
+The pred and succ is 0 and 0
+464 is put at 0xf695a3c4 and 0xf695a590
+2696 is put at 0xf695a594 and 0xf695b018
+Allocating memory of size 456 at line 66 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695a598, the value is 2696
+The position inside chunk is 0xf695a598
+The size needed to be allocated is 464
+ within 2696
+The pred and succ is 0 and 0
+464 is put at 0xf695a594 and 0xf695a760
+2232 is put at 0xf695a764 and 0xf695b018
+Allocating memory of size 456 at line 67 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695a768, the value is 2232
+The position inside chunk is 0xf695a768
+The size needed to be allocated is 464
+ within 2232
+The pred and succ is 0 and 0
+464 is put at 0xf695a764 and 0xf695a930
+1768 is put at 0xf695a934 and 0xf695b018
+Allocating memory of size 456 at line 68 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695a938, the value is 1768
+The position inside chunk is 0xf695a938
+The size needed to be allocated is 464
+ within 1768
+The pred and succ is 0 and 0
+464 is put at 0xf695a934 and 0xf695ab00
+1304 is put at 0xf695ab04 and 0xf695b018
+Allocating memory of size 456 at line 69 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ab08, the value is 1304
+The position inside chunk is 0xf695ab08
+The size needed to be allocated is 464
+ within 1304
+The pred and succ is 0 and 0
+464 is put at 0xf695ab04 and 0xf695acd0
+840 is put at 0xf695acd4 and 0xf695b018
+Allocating memory of size 456 at line 70 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695acd8, the value is 840
+The position inside chunk is 0xf695acd8
+The size needed to be allocated is 464
+ within 840
+The pred and succ is 0 and 0
+464 is put at 0xf695acd4 and 0xf695aea0
+376 is put at 0xf695aea4 and 0xf695b018
+Allocating memory of size 456 at line 71 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695aea8, the value is 376
+The boundary is extended to 0xf695c020 and size is 4096
+The value in next pointer 0xf695c020 is 1
+The value in previous 0xf695aea8 header is 376 and in previous foot is 376
+The size of ptr is 4096 and previous is 376
+case 3
+The free list pointer in coalesce is at 0xf695aea8
+The position outside chunk is 0xf695aea8
+The size needed to be allocated is 464
+ within 4472
+The pred and succ is 0 and 0
+464 is put at 0xf695aea4 and 0xf695b070
+4008 is put at 0xf695b074 and 0xf695c018
+Allocating memory of size 456 at line 72 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695b078, the value is 4008
+The position inside chunk is 0xf695b078
+The size needed to be allocated is 464
+ within 4008
+The pred and succ is 0 and 0
+464 is put at 0xf695b074 and 0xf695b240
+3544 is put at 0xf695b244 and 0xf695c018
+Allocating memory of size 456 at line 73 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695b248, the value is 3544
+The position inside chunk is 0xf695b248
+The size needed to be allocated is 464
+ within 3544
+The pred and succ is 0 and 0
+464 is put at 0xf695b244 and 0xf695b410
+3080 is put at 0xf695b414 and 0xf695c018
+Allocating memory of size 9 at line 74 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695b418, the value is 3080
+The position inside chunk is 0xf695b418
+The size needed to be allocated is 24
+ within 3080
+The pred and succ is 0 and 0
+24 is put at 0xf695b414 and 0xf695b428
+3056 is put at 0xf695b42c and 0xf695c018
+Allocating memory of size 10 at line 75 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695b430, the value is 3056
+The position inside chunk is 0xf695b430
+The size needed to be allocated is 24
+ within 3056
+The pred and succ is 0 and 0
+24 is put at 0xf695b42c and 0xf695b440
+3032 is put at 0xf695b444 and 0xf695c018
+Allocating memory of size 9 at line 76 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695b448, the value is 3032
+The position inside chunk is 0xf695b448
+The size needed to be allocated is 24
+ within 3032
+The pred and succ is 0 and 0
+24 is put at 0xf695b444 and 0xf695b458
+3008 is put at 0xf695b45c and 0xf695c018
+Allocating memory of size 9 at line 77 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695b460, the value is 3008
+The position inside chunk is 0xf695b460
+The size needed to be allocated is 24
+ within 3008
+The pred and succ is 0 and 0
+24 is put at 0xf695b45c and 0xf695b470
+2984 is put at 0xf695b474 and 0xf695c018
+Allocating memory of size 4072 at line 78 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695b478, the value is 2984
+The boundary is extended to 0xf695d020 and size is 4096
+The value in next pointer 0xf695d020 is 1
+The value in previous 0xf695b478 header is 2984 and in previous foot is 2984
+The size of ptr is 4096 and previous is 2984
+case 3
+The free list pointer in coalesce is at 0xf695b478
+The position outside chunk is 0xf695b478
+The size needed to be allocated is 4080
+ within 7080
+The pred and succ is 0 and 0
+4080 is put at 0xf695b474 and 0xf695c460
+3000 is put at 0xf695c464 and 0xf695d018
+Allocating memory of size 9 at line 79 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c468, the value is 3000
+The position inside chunk is 0xf695c468
+The size needed to be allocated is 24
+ within 3000
+The pred and succ is 0 and 0
+24 is put at 0xf695c464 and 0xf695c478
+2976 is put at 0xf695c47c and 0xf695d018
+Allocating memory of size 9 at line 80 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c480, the value is 2976
+The position inside chunk is 0xf695c480
+The size needed to be allocated is 24
+ within 2976
+The pred and succ is 0 and 0
+24 is put at 0xf695c47c and 0xf695c490
+2952 is put at 0xf695c494 and 0xf695d018
+Allocating memory of size 9 at line 81 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c498, the value is 2952
+The position inside chunk is 0xf695c498
+The size needed to be allocated is 24
+ within 2952
+The pred and succ is 0 and 0
+24 is put at 0xf695c494 and 0xf695c4a8
+2928 is put at 0xf695c4ac and 0xf695d018
+Allocating memory of size 9 at line 82 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c4b0, the value is 2928
+The position inside chunk is 0xf695c4b0
+The size needed to be allocated is 24
+ within 2928
+The pred and succ is 0 and 0
+24 is put at 0xf695c4ac and 0xf695c4c0
+2904 is put at 0xf695c4c4 and 0xf695d018
+Allocating memory of size 9 at line 83 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c4c8, the value is 2904
+The position inside chunk is 0xf695c4c8
+The size needed to be allocated is 24
+ within 2904
+The pred and succ is 0 and 0
+24 is put at 0xf695c4c4 and 0xf695c4d8
+2880 is put at 0xf695c4dc and 0xf695d018
+Allocating memory of size 10 at line 84 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c4e0, the value is 2880
+The position inside chunk is 0xf695c4e0
+The size needed to be allocated is 24
+ within 2880
+The pred and succ is 0 and 0
+24 is put at 0xf695c4dc and 0xf695c4f0
+2856 is put at 0xf695c4f4 and 0xf695d018
+Allocating memory of size 9 at line 85 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c4f8, the value is 2856
+The position inside chunk is 0xf695c4f8
+The size needed to be allocated is 24
+ within 2856
+The pred and succ is 0 and 0
+24 is put at 0xf695c4f4 and 0xf695c508
+2832 is put at 0xf695c50c and 0xf695d018
+Allocating memory of size 9 at line 86 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c510, the value is 2832
+The position inside chunk is 0xf695c510
+The size needed to be allocated is 24
+ within 2832
+The pred and succ is 0 and 0
+24 is put at 0xf695c50c and 0xf695c520
+2808 is put at 0xf695c524 and 0xf695d018
+Allocating memory of size 9 at line 87 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c528, the value is 2808
+The position inside chunk is 0xf695c528
+The size needed to be allocated is 24
+ within 2808
+The pred and succ is 0 and 0
+24 is put at 0xf695c524 and 0xf695c538
+2784 is put at 0xf695c53c and 0xf695d018
+Allocating memory of size 9 at line 88 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c540, the value is 2784
+The position inside chunk is 0xf695c540
+The size needed to be allocated is 24
+ within 2784
+The pred and succ is 0 and 0
+24 is put at 0xf695c53c and 0xf695c550
+2760 is put at 0xf695c554 and 0xf695d018
+Allocating memory of size 9 at line 89 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c558, the value is 2760
+The position inside chunk is 0xf695c558
+The size needed to be allocated is 24
+ within 2760
+The pred and succ is 0 and 0
+24 is put at 0xf695c554 and 0xf695c568
+2736 is put at 0xf695c56c and 0xf695d018
+Allocating memory of size 9 at line 90 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c570, the value is 2736
+The position inside chunk is 0xf695c570
+The size needed to be allocated is 24
+ within 2736
+The pred and succ is 0 and 0
+24 is put at 0xf695c56c and 0xf695c580
+2712 is put at 0xf695c584 and 0xf695d018
+Allocating memory of size 9 at line 91 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c588, the value is 2712
+The position inside chunk is 0xf695c588
+The size needed to be allocated is 24
+ within 2712
+The pred and succ is 0 and 0
+24 is put at 0xf695c584 and 0xf695c598
+2688 is put at 0xf695c59c and 0xf695d018
+Allocating memory of size 10 at line 92 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c5a0, the value is 2688
+The position inside chunk is 0xf695c5a0
+The size needed to be allocated is 24
+ within 2688
+The pred and succ is 0 and 0
+24 is put at 0xf695c59c and 0xf695c5b0
+2664 is put at 0xf695c5b4 and 0xf695d018
+Allocating memory of size 9 at line 93 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c5b8, the value is 2664
+The position inside chunk is 0xf695c5b8
+The size needed to be allocated is 24
+ within 2664
+The pred and succ is 0 and 0
+24 is put at 0xf695c5b4 and 0xf695c5c8
+2640 is put at 0xf695c5cc and 0xf695d018
+Allocating memory of size 9 at line 94 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c5d0, the value is 2640
+The position inside chunk is 0xf695c5d0
+The size needed to be allocated is 24
+ within 2640
+The pred and succ is 0 and 0
+24 is put at 0xf695c5cc and 0xf695c5e0
+2616 is put at 0xf695c5e4 and 0xf695d018
+Allocating memory of size 9 at line 95 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c5e8, the value is 2616
+The position inside chunk is 0xf695c5e8
+The size needed to be allocated is 24
+ within 2616
+The pred and succ is 0 and 0
+24 is put at 0xf695c5e4 and 0xf695c5f8
+2592 is put at 0xf695c5fc and 0xf695d018
+Allocating memory of size 9 at line 96 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c600, the value is 2592
+The position inside chunk is 0xf695c600
+The size needed to be allocated is 24
+ within 2592
+The pred and succ is 0 and 0
+24 is put at 0xf695c5fc and 0xf695c610
+2568 is put at 0xf695c614 and 0xf695d018
+Allocating memory of size 9 at line 97 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c618, the value is 2568
+The position inside chunk is 0xf695c618
+The size needed to be allocated is 24
+ within 2568
+The pred and succ is 0 and 0
+24 is put at 0xf695c614 and 0xf695c628
+2544 is put at 0xf695c62c and 0xf695d018
+Allocating memory of size 9 at line 98 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c630, the value is 2544
+The position inside chunk is 0xf695c630
+The size needed to be allocated is 24
+ within 2544
+The pred and succ is 0 and 0
+24 is put at 0xf695c62c and 0xf695c640
+2520 is put at 0xf695c644 and 0xf695d018
+Allocating memory of size 9 at line 99 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c648, the value is 2520
+The position inside chunk is 0xf695c648
+The size needed to be allocated is 24
+ within 2520
+The pred and succ is 0 and 0
+24 is put at 0xf695c644 and 0xf695c658
+2496 is put at 0xf695c65c and 0xf695d018
+Allocating memory of size 10 at line 100 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c660, the value is 2496
+The position inside chunk is 0xf695c660
+The size needed to be allocated is 24
+ within 2496
+The pred and succ is 0 and 0
+24 is put at 0xf695c65c and 0xf695c670
+2472 is put at 0xf695c674 and 0xf695d018
+Allocating memory of size 9 at line 101 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c678, the value is 2472
+The position inside chunk is 0xf695c678
+The size needed to be allocated is 24
+ within 2472
+The pred and succ is 0 and 0
+24 is put at 0xf695c674 and 0xf695c688
+2448 is put at 0xf695c68c and 0xf695d018
+Allocating memory of size 9 at line 102 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c690, the value is 2448
+The position inside chunk is 0xf695c690
+The size needed to be allocated is 24
+ within 2448
+The pred and succ is 0 and 0
+24 is put at 0xf695c68c and 0xf695c6a0
+2424 is put at 0xf695c6a4 and 0xf695d018
+Allocating memory of size 10 at line 103 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c6a8, the value is 2424
+The position inside chunk is 0xf695c6a8
+The size needed to be allocated is 24
+ within 2424
+The pred and succ is 0 and 0
+24 is put at 0xf695c6a4 and 0xf695c6b8
+2400 is put at 0xf695c6bc and 0xf695d018
+Allocating memory of size 11 at line 104 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c6c0, the value is 2400
+The position inside chunk is 0xf695c6c0
+The size needed to be allocated is 24
+ within 2400
+The pred and succ is 0 and 0
+24 is put at 0xf695c6bc and 0xf695c6d0
+2376 is put at 0xf695c6d4 and 0xf695d018
+Allocating memory of size 10 at line 105 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c6d8, the value is 2376
+The position inside chunk is 0xf695c6d8
+The size needed to be allocated is 24
+ within 2376
+The pred and succ is 0 and 0
+24 is put at 0xf695c6d4 and 0xf695c6e8
+2352 is put at 0xf695c6ec and 0xf695d018
+Allocating memory of size 10 at line 106 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c6f0, the value is 2352
+The position inside chunk is 0xf695c6f0
+The size needed to be allocated is 24
+ within 2352
+The pred and succ is 0 and 0
+24 is put at 0xf695c6ec and 0xf695c700
+2328 is put at 0xf695c704 and 0xf695d018
+Allocating memory of size 12 at line 107 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c708, the value is 2328
+The position inside chunk is 0xf695c708
+The size needed to be allocated is 24
+ within 2328
+The pred and succ is 0 and 0
+24 is put at 0xf695c704 and 0xf695c718
+2304 is put at 0xf695c71c and 0xf695d018
+Allocating memory of size 13 at line 108 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c720, the value is 2304
+The position inside chunk is 0xf695c720
+The size needed to be allocated is 24
+ within 2304
+The pred and succ is 0 and 0
+24 is put at 0xf695c71c and 0xf695c730
+2280 is put at 0xf695c734 and 0xf695d018
+Allocating memory of size 12 at line 109 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c738, the value is 2280
+The position inside chunk is 0xf695c738
+The size needed to be allocated is 24
+ within 2280
+The pred and succ is 0 and 0
+24 is put at 0xf695c734 and 0xf695c748
+2256 is put at 0xf695c74c and 0xf695d018
+Allocating memory of size 12 at line 110 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c750, the value is 2256
+The position inside chunk is 0xf695c750
+The size needed to be allocated is 24
+ within 2256
+The pred and succ is 0 and 0
+24 is put at 0xf695c74c and 0xf695c760
+2232 is put at 0xf695c764 and 0xf695d018
+Allocating memory of size 13 at line 111 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c768, the value is 2232
+The position inside chunk is 0xf695c768
+The size needed to be allocated is 24
+ within 2232
+The pred and succ is 0 and 0
+24 is put at 0xf695c764 and 0xf695c778
+2208 is put at 0xf695c77c and 0xf695d018
+Allocating memory of size 14 at line 112 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c780, the value is 2208
+The position inside chunk is 0xf695c780
+The size needed to be allocated is 24
+ within 2208
+The pred and succ is 0 and 0
+24 is put at 0xf695c77c and 0xf695c790
+2184 is put at 0xf695c794 and 0xf695d018
+Allocating memory of size 13 at line 113 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c798, the value is 2184
+The position inside chunk is 0xf695c798
+The size needed to be allocated is 24
+ within 2184
+The pred and succ is 0 and 0
+24 is put at 0xf695c794 and 0xf695c7a8
+2160 is put at 0xf695c7ac and 0xf695d018
+Allocating memory of size 13 at line 114 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c7b0, the value is 2160
+The position inside chunk is 0xf695c7b0
+The size needed to be allocated is 24
+ within 2160
+The pred and succ is 0 and 0
+24 is put at 0xf695c7ac and 0xf695c7c0
+2136 is put at 0xf695c7c4 and 0xf695d018
+Allocating memory of size 9 at line 115 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c7c8, the value is 2136
+The position inside chunk is 0xf695c7c8
+The size needed to be allocated is 24
+ within 2136
+The pred and succ is 0 and 0
+24 is put at 0xf695c7c4 and 0xf695c7d8
+2112 is put at 0xf695c7dc and 0xf695d018
+Allocating memory of size 10 at line 116 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c7e0, the value is 2112
+The position inside chunk is 0xf695c7e0
+The size needed to be allocated is 24
+ within 2112
+The pred and succ is 0 and 0
+24 is put at 0xf695c7dc and 0xf695c7f0
+2088 is put at 0xf695c7f4 and 0xf695d018
+Allocating memory of size 9 at line 117 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c7f8, the value is 2088
+The position inside chunk is 0xf695c7f8
+The size needed to be allocated is 24
+ within 2088
+The pred and succ is 0 and 0
+24 is put at 0xf695c7f4 and 0xf695c808
+2064 is put at 0xf695c80c and 0xf695d018
+Allocating memory of size 9 at line 118 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c810, the value is 2064
+The position inside chunk is 0xf695c810
+The size needed to be allocated is 24
+ within 2064
+The pred and succ is 0 and 0
+24 is put at 0xf695c80c and 0xf695c820
+2040 is put at 0xf695c824 and 0xf695d018
+Allocating memory of size 10 at line 119 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c828, the value is 2040
+The position inside chunk is 0xf695c828
+The size needed to be allocated is 24
+ within 2040
+The pred and succ is 0 and 0
+24 is put at 0xf695c824 and 0xf695c838
+2016 is put at 0xf695c83c and 0xf695d018
+Allocating memory of size 11 at line 120 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c840, the value is 2016
+The position inside chunk is 0xf695c840
+The size needed to be allocated is 24
+ within 2016
+The pred and succ is 0 and 0
+24 is put at 0xf695c83c and 0xf695c850
+1992 is put at 0xf695c854 and 0xf695d018
+Allocating memory of size 10 at line 121 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c858, the value is 1992
+The position inside chunk is 0xf695c858
+The size needed to be allocated is 24
+ within 1992
+The pred and succ is 0 and 0
+24 is put at 0xf695c854 and 0xf695c868
+1968 is put at 0xf695c86c and 0xf695d018
+Allocating memory of size 10 at line 122 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c870, the value is 1968
+The position inside chunk is 0xf695c870
+The size needed to be allocated is 24
+ within 1968
+The pred and succ is 0 and 0
+24 is put at 0xf695c86c and 0xf695c880
+1944 is put at 0xf695c884 and 0xf695d018
+Allocating memory of size 9 at line 123 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c888, the value is 1944
+The position inside chunk is 0xf695c888
+The size needed to be allocated is 24
+ within 1944
+The pred and succ is 0 and 0
+24 is put at 0xf695c884 and 0xf695c898
+1920 is put at 0xf695c89c and 0xf695d018
+Allocating memory of size 9 at line 124 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c8a0, the value is 1920
+The position inside chunk is 0xf695c8a0
+The size needed to be allocated is 24
+ within 1920
+The pred and succ is 0 and 0
+24 is put at 0xf695c89c and 0xf695c8b0
+1896 is put at 0xf695c8b4 and 0xf695d018
+Allocating memory of size 9 at line 125 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c8b8, the value is 1896
+The position inside chunk is 0xf695c8b8
+The size needed to be allocated is 24
+ within 1896
+The pred and succ is 0 and 0
+24 is put at 0xf695c8b4 and 0xf695c8c8
+1872 is put at 0xf695c8cc and 0xf695d018
+Allocating memory of size 9 at line 126 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c8d0, the value is 1872
+The position inside chunk is 0xf695c8d0
+The size needed to be allocated is 24
+ within 1872
+The pred and succ is 0 and 0
+24 is put at 0xf695c8cc and 0xf695c8e0
+1848 is put at 0xf695c8e4 and 0xf695d018
+Allocating memory of size 12 at line 127 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c8e8, the value is 1848
+The position inside chunk is 0xf695c8e8
+The size needed to be allocated is 24
+ within 1848
+The pred and succ is 0 and 0
+24 is put at 0xf695c8e4 and 0xf695c8f8
+1824 is put at 0xf695c8fc and 0xf695d018
+Allocating memory of size 12 at line 128 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c900, the value is 1824
+The position inside chunk is 0xf695c900
+The size needed to be allocated is 24
+ within 1824
+The pred and succ is 0 and 0
+24 is put at 0xf695c8fc and 0xf695c910
+1800 is put at 0xf695c914 and 0xf695d018
+Allocating memory of size 12 at line 129 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c918, the value is 1800
+The position inside chunk is 0xf695c918
+The size needed to be allocated is 24
+ within 1800
+The pred and succ is 0 and 0
+24 is put at 0xf695c914 and 0xf695c928
+1776 is put at 0xf695c92c and 0xf695d018
+Allocating memory of size 12 at line 130 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c930, the value is 1776
+The position inside chunk is 0xf695c930
+The size needed to be allocated is 24
+ within 1776
+The pred and succ is 0 and 0
+24 is put at 0xf695c92c and 0xf695c940
+1752 is put at 0xf695c944 and 0xf695d018
+Allocating memory of size 9 at line 131 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c948, the value is 1752
+The position inside chunk is 0xf695c948
+The size needed to be allocated is 24
+ within 1752
+The pred and succ is 0 and 0
+24 is put at 0xf695c944 and 0xf695c958
+1728 is put at 0xf695c95c and 0xf695d018
+Allocating memory of size 10 at line 132 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c960, the value is 1728
+The position inside chunk is 0xf695c960
+The size needed to be allocated is 24
+ within 1728
+The pred and succ is 0 and 0
+24 is put at 0xf695c95c and 0xf695c970
+1704 is put at 0xf695c974 and 0xf695d018
+Allocating memory of size 9 at line 133 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c978, the value is 1704
+The position inside chunk is 0xf695c978
+The size needed to be allocated is 24
+ within 1704
+The pred and succ is 0 and 0
+24 is put at 0xf695c974 and 0xf695c988
+1680 is put at 0xf695c98c and 0xf695d018
+Allocating memory of size 9 at line 134 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c990, the value is 1680
+The position inside chunk is 0xf695c990
+The size needed to be allocated is 24
+ within 1680
+The pred and succ is 0 and 0
+24 is put at 0xf695c98c and 0xf695c9a0
+1656 is put at 0xf695c9a4 and 0xf695d018
+Allocating memory of size 9 at line 135 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c9a8, the value is 1656
+The position inside chunk is 0xf695c9a8
+The size needed to be allocated is 24
+ within 1656
+The pred and succ is 0 and 0
+24 is put at 0xf695c9a4 and 0xf695c9b8
+1632 is put at 0xf695c9bc and 0xf695d018
+Allocating memory of size 10 at line 136 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c9c0, the value is 1632
+The position inside chunk is 0xf695c9c0
+The size needed to be allocated is 24
+ within 1632
+The pred and succ is 0 and 0
+24 is put at 0xf695c9bc and 0xf695c9d0
+1608 is put at 0xf695c9d4 and 0xf695d018
+Allocating memory of size 9 at line 137 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c9d8, the value is 1608
+The position inside chunk is 0xf695c9d8
+The size needed to be allocated is 24
+ within 1608
+The pred and succ is 0 and 0
+24 is put at 0xf695c9d4 and 0xf695c9e8
+1584 is put at 0xf695c9ec and 0xf695d018
+Allocating memory of size 9 at line 138 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695c9f0, the value is 1584
+The position inside chunk is 0xf695c9f0
+The size needed to be allocated is 24
+ within 1584
+The pred and succ is 0 and 0
+24 is put at 0xf695c9ec and 0xf695ca00
+1560 is put at 0xf695ca04 and 0xf695d018
+Allocating memory of size 9 at line 139 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ca08, the value is 1560
+The position inside chunk is 0xf695ca08
+The size needed to be allocated is 24
+ within 1560
+The pred and succ is 0 and 0
+24 is put at 0xf695ca04 and 0xf695ca18
+1536 is put at 0xf695ca1c and 0xf695d018
+Allocating memory of size 10 at line 140 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ca20, the value is 1536
+The position inside chunk is 0xf695ca20
+The size needed to be allocated is 24
+ within 1536
+The pred and succ is 0 and 0
+24 is put at 0xf695ca1c and 0xf695ca30
+1512 is put at 0xf695ca34 and 0xf695d018
+Allocating memory of size 9 at line 141 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ca38, the value is 1512
+The position inside chunk is 0xf695ca38
+The size needed to be allocated is 24
+ within 1512
+The pred and succ is 0 and 0
+24 is put at 0xf695ca34 and 0xf695ca48
+1488 is put at 0xf695ca4c and 0xf695d018
+Allocating memory of size 9 at line 142 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ca50, the value is 1488
+The position inside chunk is 0xf695ca50
+The size needed to be allocated is 24
+ within 1488
+The pred and succ is 0 and 0
+24 is put at 0xf695ca4c and 0xf695ca60
+1464 is put at 0xf695ca64 and 0xf695d018
+Allocating memory of size 10 at line 143 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ca68, the value is 1464
+The position inside chunk is 0xf695ca68
+The size needed to be allocated is 24
+ within 1464
+The pred and succ is 0 and 0
+24 is put at 0xf695ca64 and 0xf695ca78
+1440 is put at 0xf695ca7c and 0xf695d018
+Allocating memory of size 11 at line 144 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ca80, the value is 1440
+The position inside chunk is 0xf695ca80
+The size needed to be allocated is 24
+ within 1440
+The pred and succ is 0 and 0
+24 is put at 0xf695ca7c and 0xf695ca90
+1416 is put at 0xf695ca94 and 0xf695d018
+Allocating memory of size 10 at line 145 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ca98, the value is 1416
+The position inside chunk is 0xf695ca98
+The size needed to be allocated is 24
+ within 1416
+The pred and succ is 0 and 0
+24 is put at 0xf695ca94 and 0xf695caa8
+1392 is put at 0xf695caac and 0xf695d018
+Allocating memory of size 10 at line 146 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cab0, the value is 1392
+The position inside chunk is 0xf695cab0
+The size needed to be allocated is 24
+ within 1392
+The pred and succ is 0 and 0
+24 is put at 0xf695caac and 0xf695cac0
+1368 is put at 0xf695cac4 and 0xf695d018
+Allocating memory of size 10 at line 147 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cac8, the value is 1368
+The position inside chunk is 0xf695cac8
+The size needed to be allocated is 24
+ within 1368
+The pred and succ is 0 and 0
+24 is put at 0xf695cac4 and 0xf695cad8
+1344 is put at 0xf695cadc and 0xf695d018
+Allocating memory of size 11 at line 148 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cae0, the value is 1344
+The position inside chunk is 0xf695cae0
+The size needed to be allocated is 24
+ within 1344
+The pred and succ is 0 and 0
+24 is put at 0xf695cadc and 0xf695caf0
+1320 is put at 0xf695caf4 and 0xf695d018
+Allocating memory of size 10 at line 149 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695caf8, the value is 1320
+The position inside chunk is 0xf695caf8
+The size needed to be allocated is 24
+ within 1320
+The pred and succ is 0 and 0
+24 is put at 0xf695caf4 and 0xf695cb08
+1296 is put at 0xf695cb0c and 0xf695d018
+Allocating memory of size 10 at line 150 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cb10, the value is 1296
+The position inside chunk is 0xf695cb10
+The size needed to be allocated is 24
+ within 1296
+The pred and succ is 0 and 0
+24 is put at 0xf695cb0c and 0xf695cb20
+1272 is put at 0xf695cb24 and 0xf695d018
+Allocating memory of size 10 at line 151 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cb28, the value is 1272
+The position inside chunk is 0xf695cb28
+The size needed to be allocated is 24
+ within 1272
+The pred and succ is 0 and 0
+24 is put at 0xf695cb24 and 0xf695cb38
+1248 is put at 0xf695cb3c and 0xf695d018
+Allocating memory of size 11 at line 152 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cb40, the value is 1248
+The position inside chunk is 0xf695cb40
+The size needed to be allocated is 24
+ within 1248
+The pred and succ is 0 and 0
+24 is put at 0xf695cb3c and 0xf695cb50
+1224 is put at 0xf695cb54 and 0xf695d018
+Allocating memory of size 10 at line 153 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cb58, the value is 1224
+The position inside chunk is 0xf695cb58
+The size needed to be allocated is 24
+ within 1224
+The pred and succ is 0 and 0
+24 is put at 0xf695cb54 and 0xf695cb68
+1200 is put at 0xf695cb6c and 0xf695d018
+Allocating memory of size 10 at line 154 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cb70, the value is 1200
+The position inside chunk is 0xf695cb70
+The size needed to be allocated is 24
+ within 1200
+The pred and succ is 0 and 0
+24 is put at 0xf695cb6c and 0xf695cb80
+1176 is put at 0xf695cb84 and 0xf695d018
+Allocating memory of size 9 at line 155 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cb88, the value is 1176
+The position inside chunk is 0xf695cb88
+The size needed to be allocated is 24
+ within 1176
+The pred and succ is 0 and 0
+24 is put at 0xf695cb84 and 0xf695cb98
+1152 is put at 0xf695cb9c and 0xf695d018
+Allocating memory of size 10 at line 156 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cba0, the value is 1152
+The position inside chunk is 0xf695cba0
+The size needed to be allocated is 24
+ within 1152
+The pred and succ is 0 and 0
+24 is put at 0xf695cb9c and 0xf695cbb0
+1128 is put at 0xf695cbb4 and 0xf695d018
+Allocating memory of size 9 at line 157 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cbb8, the value is 1128
+The position inside chunk is 0xf695cbb8
+The size needed to be allocated is 24
+ within 1128
+The pred and succ is 0 and 0
+24 is put at 0xf695cbb4 and 0xf695cbc8
+1104 is put at 0xf695cbcc and 0xf695d018
+Allocating memory of size 9 at line 158 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cbd0, the value is 1104
+The position inside chunk is 0xf695cbd0
+The size needed to be allocated is 24
+ within 1104
+The pred and succ is 0 and 0
+24 is put at 0xf695cbcc and 0xf695cbe0
+1080 is put at 0xf695cbe4 and 0xf695d018
+Allocating memory of size 9 at line 159 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cbe8, the value is 1080
+The position inside chunk is 0xf695cbe8
+The size needed to be allocated is 24
+ within 1080
+The pred and succ is 0 and 0
+24 is put at 0xf695cbe4 and 0xf695cbf8
+1056 is put at 0xf695cbfc and 0xf695d018
+Allocating memory of size 9 at line 160 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cc00, the value is 1056
+The position inside chunk is 0xf695cc00
+The size needed to be allocated is 24
+ within 1056
+The pred and succ is 0 and 0
+24 is put at 0xf695cbfc and 0xf695cc10
+1032 is put at 0xf695cc14 and 0xf695d018
+Allocating memory of size 9 at line 161 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cc18, the value is 1032
+The position inside chunk is 0xf695cc18
+The size needed to be allocated is 24
+ within 1032
+The pred and succ is 0 and 0
+24 is put at 0xf695cc14 and 0xf695cc28
+1008 is put at 0xf695cc2c and 0xf695d018
+Allocating memory of size 9 at line 162 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cc30, the value is 1008
+The position inside chunk is 0xf695cc30
+The size needed to be allocated is 24
+ within 1008
+The pred and succ is 0 and 0
+24 is put at 0xf695cc2c and 0xf695cc40
+984 is put at 0xf695cc44 and 0xf695d018
+Allocating memory of size 9 at line 163 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cc48, the value is 984
+The position inside chunk is 0xf695cc48
+The size needed to be allocated is 24
+ within 984
+The pred and succ is 0 and 0
+24 is put at 0xf695cc44 and 0xf695cc58
+960 is put at 0xf695cc5c and 0xf695d018
+Allocating memory of size 10 at line 164 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cc60, the value is 960
+The position inside chunk is 0xf695cc60
+The size needed to be allocated is 24
+ within 960
+The pred and succ is 0 and 0
+24 is put at 0xf695cc5c and 0xf695cc70
+936 is put at 0xf695cc74 and 0xf695d018
+Allocating memory of size 9 at line 165 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cc78, the value is 936
+The position inside chunk is 0xf695cc78
+The size needed to be allocated is 24
+ within 936
+The pred and succ is 0 and 0
+24 is put at 0xf695cc74 and 0xf695cc88
+912 is put at 0xf695cc8c and 0xf695d018
+Allocating memory of size 9 at line 166 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cc90, the value is 912
+The position inside chunk is 0xf695cc90
+The size needed to be allocated is 24
+ within 912
+The pred and succ is 0 and 0
+24 is put at 0xf695cc8c and 0xf695cca0
+888 is put at 0xf695cca4 and 0xf695d018
+Allocating memory of size 9 at line 167 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cca8, the value is 888
+The position inside chunk is 0xf695cca8
+The size needed to be allocated is 24
+ within 888
+The pred and succ is 0 and 0
+24 is put at 0xf695cca4 and 0xf695ccb8
+864 is put at 0xf695ccbc and 0xf695d018
+Allocating memory of size 9 at line 168 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ccc0, the value is 864
+The position inside chunk is 0xf695ccc0
+The size needed to be allocated is 24
+ within 864
+The pred and succ is 0 and 0
+24 is put at 0xf695ccbc and 0xf695ccd0
+840 is put at 0xf695ccd4 and 0xf695d018
+Allocating memory of size 9 at line 169 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ccd8, the value is 840
+The position inside chunk is 0xf695ccd8
+The size needed to be allocated is 24
+ within 840
+The pred and succ is 0 and 0
+24 is put at 0xf695ccd4 and 0xf695cce8
+816 is put at 0xf695ccec and 0xf695d018
+Allocating memory of size 9 at line 170 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ccf0, the value is 816
+The position inside chunk is 0xf695ccf0
+The size needed to be allocated is 24
+ within 816
+The pred and succ is 0 and 0
+24 is put at 0xf695ccec and 0xf695cd00
+792 is put at 0xf695cd04 and 0xf695d018
+Allocating memory of size 10 at line 171 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cd08, the value is 792
+The position inside chunk is 0xf695cd08
+The size needed to be allocated is 24
+ within 792
+The pred and succ is 0 and 0
+24 is put at 0xf695cd04 and 0xf695cd18
+768 is put at 0xf695cd1c and 0xf695d018
+Allocating memory of size 11 at line 172 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cd20, the value is 768
+The position inside chunk is 0xf695cd20
+The size needed to be allocated is 24
+ within 768
+The pred and succ is 0 and 0
+24 is put at 0xf695cd1c and 0xf695cd30
+744 is put at 0xf695cd34 and 0xf695d018
+Allocating memory of size 10 at line 173 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cd38, the value is 744
+The position inside chunk is 0xf695cd38
+The size needed to be allocated is 24
+ within 744
+The pred and succ is 0 and 0
+24 is put at 0xf695cd34 and 0xf695cd48
+720 is put at 0xf695cd4c and 0xf695d018
+Allocating memory of size 10 at line 174 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cd50, the value is 720
+The position inside chunk is 0xf695cd50
+The size needed to be allocated is 24
+ within 720
+The pred and succ is 0 and 0
+24 is put at 0xf695cd4c and 0xf695cd60
+696 is put at 0xf695cd64 and 0xf695d018
+Allocating memory of size 10 at line 175 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cd68, the value is 696
+The position inside chunk is 0xf695cd68
+The size needed to be allocated is 24
+ within 696
+The pred and succ is 0 and 0
+24 is put at 0xf695cd64 and 0xf695cd78
+672 is put at 0xf695cd7c and 0xf695d018
+Allocating memory of size 11 at line 176 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cd80, the value is 672
+The position inside chunk is 0xf695cd80
+The size needed to be allocated is 24
+ within 672
+The pred and succ is 0 and 0
+24 is put at 0xf695cd7c and 0xf695cd90
+648 is put at 0xf695cd94 and 0xf695d018
+Allocating memory of size 10 at line 177 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cd98, the value is 648
+The position inside chunk is 0xf695cd98
+The size needed to be allocated is 24
+ within 648
+The pred and succ is 0 and 0
+24 is put at 0xf695cd94 and 0xf695cda8
+624 is put at 0xf695cdac and 0xf695d018
+Allocating memory of size 10 at line 178 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cdb0, the value is 624
+The position inside chunk is 0xf695cdb0
+The size needed to be allocated is 24
+ within 624
+The pred and succ is 0 and 0
+24 is put at 0xf695cdac and 0xf695cdc0
+600 is put at 0xf695cdc4 and 0xf695d018
+Allocating memory of size 9 at line 179 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cdc8, the value is 600
+The position inside chunk is 0xf695cdc8
+The size needed to be allocated is 24
+ within 600
+The pred and succ is 0 and 0
+24 is put at 0xf695cdc4 and 0xf695cdd8
+576 is put at 0xf695cddc and 0xf695d018
+Allocating memory of size 10 at line 180 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cde0, the value is 576
+The position inside chunk is 0xf695cde0
+The size needed to be allocated is 24
+ within 576
+The pred and succ is 0 and 0
+24 is put at 0xf695cddc and 0xf695cdf0
+552 is put at 0xf695cdf4 and 0xf695d018
+Allocating memory of size 9 at line 181 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cdf8, the value is 552
+The position inside chunk is 0xf695cdf8
+The size needed to be allocated is 24
+ within 552
+The pred and succ is 0 and 0
+24 is put at 0xf695cdf4 and 0xf695ce08
+528 is put at 0xf695ce0c and 0xf695d018
+Allocating memory of size 9 at line 182 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ce10, the value is 528
+The position inside chunk is 0xf695ce10
+The size needed to be allocated is 24
+ within 528
+The pred and succ is 0 and 0
+24 is put at 0xf695ce0c and 0xf695ce20
+504 is put at 0xf695ce24 and 0xf695d018
+Allocating memory of size 9 at line 183 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ce28, the value is 504
+The position inside chunk is 0xf695ce28
+The size needed to be allocated is 24
+ within 504
+The pred and succ is 0 and 0
+24 is put at 0xf695ce24 and 0xf695ce38
+480 is put at 0xf695ce3c and 0xf695d018
+Allocating memory of size 9 at line 184 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ce40, the value is 480
+The position inside chunk is 0xf695ce40
+The size needed to be allocated is 24
+ within 480
+The pred and succ is 0 and 0
+24 is put at 0xf695ce3c and 0xf695ce50
+456 is put at 0xf695ce54 and 0xf695d018
+Allocating memory of size 9 at line 185 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ce58, the value is 456
+The position inside chunk is 0xf695ce58
+The size needed to be allocated is 24
+ within 456
+The pred and succ is 0 and 0
+24 is put at 0xf695ce54 and 0xf695ce68
+432 is put at 0xf695ce6c and 0xf695d018
+Allocating memory of size 9 at line 186 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ce70, the value is 432
+The position inside chunk is 0xf695ce70
+The size needed to be allocated is 24
+ within 432
+The pred and succ is 0 and 0
+24 is put at 0xf695ce6c and 0xf695ce80
+408 is put at 0xf695ce84 and 0xf695d018
+Allocating memory of size 14 at line 187 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ce88, the value is 408
+The position inside chunk is 0xf695ce88
+The size needed to be allocated is 24
+ within 408
+The pred and succ is 0 and 0
+24 is put at 0xf695ce84 and 0xf695ce98
+384 is put at 0xf695ce9c and 0xf695d018
+Allocating memory of size 15 at line 188 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cea0, the value is 384
+The position inside chunk is 0xf695cea0
+The size needed to be allocated is 24
+ within 384
+The pred and succ is 0 and 0
+24 is put at 0xf695ce9c and 0xf695ceb0
+360 is put at 0xf695ceb4 and 0xf695d018
+Allocating memory of size 14 at line 189 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ceb8, the value is 360
+The position inside chunk is 0xf695ceb8
+The size needed to be allocated is 24
+ within 360
+The pred and succ is 0 and 0
+24 is put at 0xf695ceb4 and 0xf695cec8
+336 is put at 0xf695cecc and 0xf695d018
+Allocating memory of size 14 at line 190 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695ced0, the value is 336
+The position inside chunk is 0xf695ced0
+The size needed to be allocated is 24
+ within 336
+The pred and succ is 0 and 0
+24 is put at 0xf695cecc and 0xf695cee0
+312 is put at 0xf695cee4 and 0xf695d018
+Allocating memory of size 9 at line 191 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cee8, the value is 312
+The position inside chunk is 0xf695cee8
+The size needed to be allocated is 24
+ within 312
+The pred and succ is 0 and 0
+24 is put at 0xf695cee4 and 0xf695cef8
+288 is put at 0xf695cefc and 0xf695d018
+Allocating memory of size 10 at line 192 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cf00, the value is 288
+The position inside chunk is 0xf695cf00
+The size needed to be allocated is 24
+ within 288
+The pred and succ is 0 and 0
+24 is put at 0xf695cefc and 0xf695cf10
+264 is put at 0xf695cf14 and 0xf695d018
+Allocating memory of size 9 at line 193 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cf18, the value is 264
+The position inside chunk is 0xf695cf18
+The size needed to be allocated is 24
+ within 264
+The pred and succ is 0 and 0
+24 is put at 0xf695cf14 and 0xf695cf28
+240 is put at 0xf695cf2c and 0xf695d018
+Allocating memory of size 9 at line 194 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cf30, the value is 240
+The position inside chunk is 0xf695cf30
+The size needed to be allocated is 24
+ within 240
+The pred and succ is 0 and 0
+24 is put at 0xf695cf2c and 0xf695cf40
+216 is put at 0xf695cf44 and 0xf695d018
+Allocating memory of size 9 at line 195 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cf48, the value is 216
+The position inside chunk is 0xf695cf48
+The size needed to be allocated is 24
+ within 216
+The pred and succ is 0 and 0
+24 is put at 0xf695cf44 and 0xf695cf58
+192 is put at 0xf695cf5c and 0xf695d018
+Allocating memory of size 10 at line 196 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cf60, the value is 192
+The position inside chunk is 0xf695cf60
+The size needed to be allocated is 24
+ within 192
+The pred and succ is 0 and 0
+24 is put at 0xf695cf5c and 0xf695cf70
+168 is put at 0xf695cf74 and 0xf695d018
+Allocating memory of size 9 at line 197 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cf78, the value is 168
+The position inside chunk is 0xf695cf78
+The size needed to be allocated is 24
+ within 168
+The pred and succ is 0 and 0
+24 is put at 0xf695cf74 and 0xf695cf88
+144 is put at 0xf695cf8c and 0xf695d018
+Allocating memory of size 9 at line 198 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cf90, the value is 144
+The position inside chunk is 0xf695cf90
+The size needed to be allocated is 24
+ within 144
+The pred and succ is 0 and 0
+24 is put at 0xf695cf8c and 0xf695cfa0
+120 is put at 0xf695cfa4 and 0xf695d018
+Allocating memory of size 10 at line 199 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cfa8, the value is 120
+The position inside chunk is 0xf695cfa8
+The size needed to be allocated is 24
+ within 120
+The pred and succ is 0 and 0
+24 is put at 0xf695cfa4 and 0xf695cfb8
+96 is put at 0xf695cfbc and 0xf695d018
+Allocating memory of size 11 at line 200 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cfc0, the value is 96
+The position inside chunk is 0xf695cfc0
+The size needed to be allocated is 24
+ within 96
+The pred and succ is 0 and 0
+24 is put at 0xf695cfbc and 0xf695cfd0
+72 is put at 0xf695cfd4 and 0xf695d018
+Allocating memory of size 10 at line 201 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cfd8, the value is 72
+The position inside chunk is 0xf695cfd8
+The size needed to be allocated is 24
+ within 72
+The pred and succ is 0 and 0
+24 is put at 0xf695cfd4 and 0xf695cfe8
+48 is put at 0xf695cfec and 0xf695d018
+Allocating memory of size 10 at line 202 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695cff0, the value is 48
+The position inside chunk is 0xf695cff0
+The size needed to be allocated is 24
+ within 48
+The pred and succ is 0 and 0
+24 is put at 0xf695cfec and 0xf695d000
+24 is put at 0xf695d004 and 0xf695d018
+Allocating memory of size 9 at line 203 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695d008, the value is 24
+The position inside chunk is 0xf695d008
+The size needed to be allocated is 24
+ within 24
+The pred and succ is 0 and 0
+24 is put at 0xf695d004 and 0xf695d018
+Allocating memory of size 9 at line 204 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf695e020 and size is 4096
+case 1
+The position outside chunk is 0xf695d020
+The size needed to be allocated is 24
+ within 4096
+The pred and succ is 0 and 0
+24 is put at 0xf695d01c and 0xf695d030
+4072 is put at 0xf695d034 and 0xf695e018
+Allocating memory of size 9 at line 205 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695d038, the value is 4072
+The position inside chunk is 0xf695d038
+The size needed to be allocated is 24
+ within 4072
+The pred and succ is 0 and 0
+24 is put at 0xf695d034 and 0xf695d048
+4048 is put at 0xf695d04c and 0xf695e018
+Allocating memory of size 9 at line 206 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695d050, the value is 4048
+The position inside chunk is 0xf695d050
+The size needed to be allocated is 24
+ within 4048
+The pred and succ is 0 and 0
+24 is put at 0xf695d04c and 0xf695d060
+4024 is put at 0xf695d064 and 0xf695e018
+Allocating memory of size 4072 at line 207 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695d068, the value is 4024
+The boundary is extended to 0xf695f020 and size is 4096
+The value in next pointer 0xf695f020 is 1
+The value in previous 0xf695d068 header is 4024 and in previous foot is 4024
+The size of ptr is 4096 and previous is 4024
+case 3
+The free list pointer in coalesce is at 0xf695d068
+The position outside chunk is 0xf695d068
+The size needed to be allocated is 4080
+ within 8120
+The pred and succ is 0 and 0
+4080 is put at 0xf695d064 and 0xf695e050
+4040 is put at 0xf695e054 and 0xf695f018
+Allocating memory of size 4072 at line 208 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695e058, the value is 4040
+The boundary is extended to 0xf6960020 and size is 4096
+The value in next pointer 0xf6960020 is 1
+The value in previous 0xf695e058 header is 4040 and in previous foot is 4040
+The size of ptr is 4096 and previous is 4040
+case 3
+The free list pointer in coalesce is at 0xf695e058
+The position outside chunk is 0xf695e058
+The size needed to be allocated is 4080
+ within 8136
+The pred and succ is 0 and 0
+4080 is put at 0xf695e054 and 0xf695f040
+4056 is put at 0xf695f044 and 0xf6960018
+The size that is freed is 4080 and the position is at 0xf695e058 at line 209 fffffffff
+The value in next pointer 0xf695f048 is 4056
+The pred and succ is 0 and 0
+case 4
+The free list pointer in coalesce is at 0xf695e058
+Allocating memory of size 4072 at line 210 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695e058, the value is 8136
+The position inside chunk is 0xf695e058
+The size needed to be allocated is 4080
+ within 8136
+The pred and succ is 0 and 0
+4080 is put at 0xf695e054 and 0xf695f040
+4056 is put at 0xf695f044 and 0xf6960018
+Allocating memory of size 4072 at line 211 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf695f048, the value is 4056
+The boundary is extended to 0xf6961020 and size is 4096
+The value in next pointer 0xf6961020 is 1
+The value in previous 0xf695f048 header is 4056 and in previous foot is 4056
+The size of ptr is 4096 and previous is 4056
+case 3
+The free list pointer in coalesce is at 0xf695f048
+The position outside chunk is 0xf695f048
+The size needed to be allocated is 4080
+ within 8152
+The pred and succ is 0 and 0
+4080 is put at 0xf695f044 and 0xf6960030
+4072 is put at 0xf6960034 and 0xf6961018
+Allocating memory of size 4072 at line 212 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6960038, the value is 4072
+The boundary is extended to 0xf6962020 and size is 4096
+The value in next pointer 0xf6962020 is 1
+The value in previous 0xf6960038 header is 4072 and in previous foot is 4072
+The size of ptr is 4096 and previous is 4072
+case 3
+The free list pointer in coalesce is at 0xf6960038
+The position outside chunk is 0xf6960038
+The size needed to be allocated is 4080
+ within 8168
+The pred and succ is 0 and 0
+4080 is put at 0xf6960034 and 0xf6961020
+4088 is put at 0xf6961024 and 0xf6962018
+Allocating memory of size 4072 at line 213 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6961028, the value is 4088
+The position inside chunk is 0xf6961028
+The size needed to be allocated is 4080
+ within 4088
+The pred and succ is 0 and 0
+4080 is put at 0xf6961024 and 0xf6962010
+Allocating memory of size 4072 at line 214 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6963020 and size is 4096
+case 1
+The position outside chunk is 0xf6962020
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf696201c and 0xf6963008
+Allocating memory of size 4072 at line 215 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6964020 and size is 4096
+case 1
+The position outside chunk is 0xf6963020
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf696301c and 0xf6964008
+Allocating memory of size 4072 at line 216 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6965020 and size is 4096
+case 1
+The position outside chunk is 0xf6964020
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf696401c and 0xf6965008
+Allocating memory of size 4072 at line 217 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6966020 and size is 4096
+case 1
+The position outside chunk is 0xf6965020
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf696501c and 0xf6966008
+Allocating memory of size 4072 at line 218 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6967020 and size is 4096
+case 1
+The position outside chunk is 0xf6966020
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf696601c and 0xf6967008
+Allocating memory of size 14 at line 219 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6968020 and size is 4096
+case 1
+The position outside chunk is 0xf6967020
+The size needed to be allocated is 24
+ within 4096
+The pred and succ is 0 and 0
+24 is put at 0xf696701c and 0xf6967030
+4072 is put at 0xf6967034 and 0xf6968018
+Allocating memory of size 9 at line 220 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6967038, the value is 4072
+The position inside chunk is 0xf6967038
+The size needed to be allocated is 24
+ within 4072
+The pred and succ is 0 and 0
+24 is put at 0xf6967034 and 0xf6967048
+4048 is put at 0xf696704c and 0xf6968018
+Allocating memory of size 48 at line 221 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6967050, the value is 4048
+The position inside chunk is 0xf6967050
+The size needed to be allocated is 56
+ within 4048
+The pred and succ is 0 and 0
+56 is put at 0xf696704c and 0xf6967080
+3992 is put at 0xf6967084 and 0xf6968018
+Allocating memory of size 24 at line 222 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6967088, the value is 3992
+The position inside chunk is 0xf6967088
+The size needed to be allocated is 32
+ within 3992
+The pred and succ is 0 and 0
+32 is put at 0xf6967084 and 0xf69670a0
+3960 is put at 0xf69670a4 and 0xf6968018
+Allocating memory of size 8208 at line 223 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69670a8, the value is 3960
+The boundary is extended to 0xf696a038 and size is 8216
+The value in next pointer 0xf696a038 is 1
+The value in previous 0xf69670a8 header is 3960 and in previous foot is 3960
+The size of ptr is 8216 and previous is 3960
+case 3
+The free list pointer in coalesce is at 0xf69670a8
+The position outside chunk is 0xf69670a8
+The size needed to be allocated is 8216
+ within 12176
+The pred and succ is 0 and 0
+8216 is put at 0xf69670a4 and 0xf69690b8
+3960 is put at 0xf69690bc and 0xf696a030
+Allocating memory of size 8208 at line 224 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69690c0, the value is 3960
+The boundary is extended to 0xf696c050 and size is 8216
+The value in next pointer 0xf696c050 is 1
+The value in previous 0xf69690c0 header is 3960 and in previous foot is 3960
+The size of ptr is 8216 and previous is 3960
+case 3
+The free list pointer in coalesce is at 0xf69690c0
+The position outside chunk is 0xf69690c0
+The size needed to be allocated is 8216
+ within 12176
+The pred and succ is 0 and 0
+8216 is put at 0xf69690bc and 0xf696b0d0
+3960 is put at 0xf696b0d4 and 0xf696c048
+Allocating memory of size 80 at line 225 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf696b0d8, the value is 3960
+The position inside chunk is 0xf696b0d8
+The size needed to be allocated is 88
+ within 3960
+The pred and succ is 0 and 0
+88 is put at 0xf696b0d4 and 0xf696b128
+3872 is put at 0xf696b12c and 0xf696c048
+Allocating memory of size 4072 at line 226 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf696b130, the value is 3872
+The boundary is extended to 0xf696d050 and size is 4096
+The value in next pointer 0xf696d050 is 1
+The value in previous 0xf696b130 header is 3872 and in previous foot is 3872
+The size of ptr is 4096 and previous is 3872
+case 3
+The free list pointer in coalesce is at 0xf696b130
+The position outside chunk is 0xf696b130
+The size needed to be allocated is 4080
+ within 7968
+The pred and succ is 0 and 0
+4080 is put at 0xf696b12c and 0xf696c118
+3888 is put at 0xf696c11c and 0xf696d048
+Allocating memory of size 4072 at line 227 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf696c120, the value is 3888
+The boundary is extended to 0xf696e050 and size is 4096
+The value in next pointer 0xf696e050 is 1
+The value in previous 0xf696c120 header is 3888 and in previous foot is 3888
+The size of ptr is 4096 and previous is 3888
+case 3
+The free list pointer in coalesce is at 0xf696c120
+The position outside chunk is 0xf696c120
+The size needed to be allocated is 4080
+ within 7984
+The pred and succ is 0 and 0
+4080 is put at 0xf696c11c and 0xf696d108
+3904 is put at 0xf696d10c and 0xf696e048
+Allocating memory of size 72 at line 228 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf696d110, the value is 3904
+The position inside chunk is 0xf696d110
+The size needed to be allocated is 80
+ within 3904
+The pred and succ is 0 and 0
+80 is put at 0xf696d10c and 0xf696d158
+3824 is put at 0xf696d15c and 0xf696e048
+Allocating memory of size 4072 at line 229 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf696d160, the value is 3824
+The boundary is extended to 0xf696f050 and size is 4096
+The value in next pointer 0xf696f050 is 1
+The value in previous 0xf696d160 header is 3824 and in previous foot is 3824
+The size of ptr is 4096 and previous is 3824
+case 3
+The free list pointer in coalesce is at 0xf696d160
+The position outside chunk is 0xf696d160
+The size needed to be allocated is 4080
+ within 7920
+The pred and succ is 0 and 0
+4080 is put at 0xf696d15c and 0xf696e148
+3840 is put at 0xf696e14c and 0xf696f048
+Allocating memory of size 4072 at line 230 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf696e150, the value is 3840
+The boundary is extended to 0xf6970050 and size is 4096
+The value in next pointer 0xf6970050 is 1
+The value in previous 0xf696e150 header is 3840 and in previous foot is 3840
+The size of ptr is 4096 and previous is 3840
+case 3
+The free list pointer in coalesce is at 0xf696e150
+The position outside chunk is 0xf696e150
+The size needed to be allocated is 4080
+ within 7936
+The pred and succ is 0 and 0
+4080 is put at 0xf696e14c and 0xf696f138
+3856 is put at 0xf696f13c and 0xf6970048
+Allocating memory of size 4072 at line 231 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf696f140, the value is 3856
+The boundary is extended to 0xf6971050 and size is 4096
+The value in next pointer 0xf6971050 is 1
+The value in previous 0xf696f140 header is 3856 and in previous foot is 3856
+The size of ptr is 4096 and previous is 3856
+case 3
+The free list pointer in coalesce is at 0xf696f140
+The position outside chunk is 0xf696f140
+The size needed to be allocated is 4080
+ within 7952
+The pred and succ is 0 and 0
+4080 is put at 0xf696f13c and 0xf6970128
+3872 is put at 0xf697012c and 0xf6971048
+Allocating memory of size 4072 at line 232 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6970130, the value is 3872
+The boundary is extended to 0xf6972050 and size is 4096
+The value in next pointer 0xf6972050 is 1
+The value in previous 0xf6970130 header is 3872 and in previous foot is 3872
+The size of ptr is 4096 and previous is 3872
+case 3
+The free list pointer in coalesce is at 0xf6970130
+The position outside chunk is 0xf6970130
+The size needed to be allocated is 4080
+ within 7968
+The pred and succ is 0 and 0
+4080 is put at 0xf697012c and 0xf6971118
+3888 is put at 0xf697111c and 0xf6972048
+Allocating memory of size 4072 at line 233 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6971120, the value is 3888
+The boundary is extended to 0xf6973050 and size is 4096
+The value in next pointer 0xf6973050 is 1
+The value in previous 0xf6971120 header is 3888 and in previous foot is 3888
+The size of ptr is 4096 and previous is 3888
+case 3
+The free list pointer in coalesce is at 0xf6971120
+The position outside chunk is 0xf6971120
+The size needed to be allocated is 4080
+ within 7984
+The pred and succ is 0 and 0
+4080 is put at 0xf697111c and 0xf6972108
+3904 is put at 0xf697210c and 0xf6973048
+Allocating memory of size 4072 at line 234 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6972110, the value is 3904
+The boundary is extended to 0xf6974050 and size is 4096
+The value in next pointer 0xf6974050 is 1
+The value in previous 0xf6972110 header is 3904 and in previous foot is 3904
+The size of ptr is 4096 and previous is 3904
+case 3
+The free list pointer in coalesce is at 0xf6972110
+The position outside chunk is 0xf6972110
+The size needed to be allocated is 4080
+ within 8000
+The pred and succ is 0 and 0
+4080 is put at 0xf697210c and 0xf69730f8
+3920 is put at 0xf69730fc and 0xf6974048
+Allocating memory of size 4072 at line 235 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6973100, the value is 3920
+The boundary is extended to 0xf6975050 and size is 4096
+The value in next pointer 0xf6975050 is 1
+The value in previous 0xf6973100 header is 3920 and in previous foot is 3920
+The size of ptr is 4096 and previous is 3920
+case 3
+The free list pointer in coalesce is at 0xf6973100
+The position outside chunk is 0xf6973100
+The size needed to be allocated is 4080
+ within 8016
+The pred and succ is 0 and 0
+4080 is put at 0xf69730fc and 0xf69740e8
+3936 is put at 0xf69740ec and 0xf6975048
+Allocating memory of size 4072 at line 236 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69740f0, the value is 3936
+The boundary is extended to 0xf6976050 and size is 4096
+The value in next pointer 0xf6976050 is 1
+The value in previous 0xf69740f0 header is 3936 and in previous foot is 3936
+The size of ptr is 4096 and previous is 3936
+case 3
+The free list pointer in coalesce is at 0xf69740f0
+The position outside chunk is 0xf69740f0
+The size needed to be allocated is 4080
+ within 8032
+The pred and succ is 0 and 0
+4080 is put at 0xf69740ec and 0xf69750d8
+3952 is put at 0xf69750dc and 0xf6976048
+Allocating memory of size 4072 at line 237 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69750e0, the value is 3952
+The boundary is extended to 0xf6977050 and size is 4096
+The value in next pointer 0xf6977050 is 1
+The value in previous 0xf69750e0 header is 3952 and in previous foot is 3952
+The size of ptr is 4096 and previous is 3952
+case 3
+The free list pointer in coalesce is at 0xf69750e0
+The position outside chunk is 0xf69750e0
+The size needed to be allocated is 4080
+ within 8048
+The pred and succ is 0 and 0
+4080 is put at 0xf69750dc and 0xf69760c8
+3968 is put at 0xf69760cc and 0xf6977048
+Allocating memory of size 4072 at line 238 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69760d0, the value is 3968
+The boundary is extended to 0xf6978050 and size is 4096
+The value in next pointer 0xf6978050 is 1
+The value in previous 0xf69760d0 header is 3968 and in previous foot is 3968
+The size of ptr is 4096 and previous is 3968
+case 3
+The free list pointer in coalesce is at 0xf69760d0
+The position outside chunk is 0xf69760d0
+The size needed to be allocated is 4080
+ within 8064
+The pred and succ is 0 and 0
+4080 is put at 0xf69760cc and 0xf69770b8
+3984 is put at 0xf69770bc and 0xf6978048
+Allocating memory of size 4072 at line 239 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69770c0, the value is 3984
+The boundary is extended to 0xf6979050 and size is 4096
+The value in next pointer 0xf6979050 is 1
+The value in previous 0xf69770c0 header is 3984 and in previous foot is 3984
+The size of ptr is 4096 and previous is 3984
+case 3
+The free list pointer in coalesce is at 0xf69770c0
+The position outside chunk is 0xf69770c0
+The size needed to be allocated is 4080
+ within 8080
+The pred and succ is 0 and 0
+4080 is put at 0xf69770bc and 0xf69780a8
+4000 is put at 0xf69780ac and 0xf6979048
+Allocating memory of size 4072 at line 240 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69780b0, the value is 4000
+The boundary is extended to 0xf697a050 and size is 4096
+The value in next pointer 0xf697a050 is 1
+The value in previous 0xf69780b0 header is 4000 and in previous foot is 4000
+The size of ptr is 4096 and previous is 4000
+case 3
+The free list pointer in coalesce is at 0xf69780b0
+The position outside chunk is 0xf69780b0
+The size needed to be allocated is 4080
+ within 8096
+The pred and succ is 0 and 0
+4080 is put at 0xf69780ac and 0xf6979098
+4016 is put at 0xf697909c and 0xf697a048
+Allocating memory of size 4072 at line 241 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69790a0, the value is 4016
+The boundary is extended to 0xf697b050 and size is 4096
+The value in next pointer 0xf697b050 is 1
+The value in previous 0xf69790a0 header is 4016 and in previous foot is 4016
+The size of ptr is 4096 and previous is 4016
+case 3
+The free list pointer in coalesce is at 0xf69790a0
+The position outside chunk is 0xf69790a0
+The size needed to be allocated is 4080
+ within 8112
+The pred and succ is 0 and 0
+4080 is put at 0xf697909c and 0xf697a088
+4032 is put at 0xf697a08c and 0xf697b048
+Allocating memory of size 4072 at line 242 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf697a090, the value is 4032
+The boundary is extended to 0xf697c050 and size is 4096
+The value in next pointer 0xf697c050 is 1
+The value in previous 0xf697a090 header is 4032 and in previous foot is 4032
+The size of ptr is 4096 and previous is 4032
+case 3
+The free list pointer in coalesce is at 0xf697a090
+The position outside chunk is 0xf697a090
+The size needed to be allocated is 4080
+ within 8128
+The pred and succ is 0 and 0
+4080 is put at 0xf697a08c and 0xf697b078
+4048 is put at 0xf697b07c and 0xf697c048
+Allocating memory of size 4072 at line 243 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf697b080, the value is 4048
+The boundary is extended to 0xf697d050 and size is 4096
+The value in next pointer 0xf697d050 is 1
+The value in previous 0xf697b080 header is 4048 and in previous foot is 4048
+The size of ptr is 4096 and previous is 4048
+case 3
+The free list pointer in coalesce is at 0xf697b080
+The position outside chunk is 0xf697b080
+The size needed to be allocated is 4080
+ within 8144
+The pred and succ is 0 and 0
+4080 is put at 0xf697b07c and 0xf697c068
+4064 is put at 0xf697c06c and 0xf697d048
+Allocating memory of size 4072 at line 244 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf697c070, the value is 4064
+The boundary is extended to 0xf697e050 and size is 4096
+The value in next pointer 0xf697e050 is 1
+The value in previous 0xf697c070 header is 4064 and in previous foot is 4064
+The size of ptr is 4096 and previous is 4064
+case 3
+The free list pointer in coalesce is at 0xf697c070
+The position outside chunk is 0xf697c070
+The size needed to be allocated is 4080
+ within 8160
+The pred and succ is 0 and 0
+4080 is put at 0xf697c06c and 0xf697d058
+4080 is put at 0xf697d05c and 0xf697e048
+Allocating memory of size 4072 at line 245 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf697d060, the value is 4080
+The position inside chunk is 0xf697d060
+The size needed to be allocated is 4080
+ within 4080
+The pred and succ is 0 and 0
+4080 is put at 0xf697d05c and 0xf697e048
+Allocating memory of size 4072 at line 246 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf697f050 and size is 4096
+case 1
+The position outside chunk is 0xf697e050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf697e04c and 0xf697f038
+Allocating memory of size 4072 at line 247 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6980050 and size is 4096
+case 1
+The position outside chunk is 0xf697f050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf697f04c and 0xf6980038
+Allocating memory of size 4072 at line 248 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6981050 and size is 4096
+case 1
+The position outside chunk is 0xf6980050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698004c and 0xf6981038
+Allocating memory of size 4072 at line 249 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6982050 and size is 4096
+case 1
+The position outside chunk is 0xf6981050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698104c and 0xf6982038
+Allocating memory of size 4072 at line 250 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6983050 and size is 4096
+case 1
+The position outside chunk is 0xf6982050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698204c and 0xf6983038
+Allocating memory of size 4072 at line 251 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6984050 and size is 4096
+case 1
+The position outside chunk is 0xf6983050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698304c and 0xf6984038
+Allocating memory of size 4072 at line 252 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6985050 and size is 4096
+case 1
+The position outside chunk is 0xf6984050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698404c and 0xf6985038
+Allocating memory of size 4072 at line 253 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6986050 and size is 4096
+case 1
+The position outside chunk is 0xf6985050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698504c and 0xf6986038
+Allocating memory of size 4072 at line 254 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6987050 and size is 4096
+case 1
+The position outside chunk is 0xf6986050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698604c and 0xf6987038
+Allocating memory of size 4072 at line 255 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6988050 and size is 4096
+case 1
+The position outside chunk is 0xf6987050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698704c and 0xf6988038
+Allocating memory of size 4072 at line 256 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6989050 and size is 4096
+case 1
+The position outside chunk is 0xf6988050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698804c and 0xf6989038
+Allocating memory of size 4072 at line 257 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf698a050 and size is 4096
+case 1
+The position outside chunk is 0xf6989050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698904c and 0xf698a038
+Allocating memory of size 4072 at line 258 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf698b050 and size is 4096
+case 1
+The position outside chunk is 0xf698a050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698a04c and 0xf698b038
+Allocating memory of size 4072 at line 259 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf698c050 and size is 4096
+case 1
+The position outside chunk is 0xf698b050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698b04c and 0xf698c038
+Allocating memory of size 4072 at line 260 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf698d050 and size is 4096
+case 1
+The position outside chunk is 0xf698c050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698c04c and 0xf698d038
+Allocating memory of size 4072 at line 261 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf698e050 and size is 4096
+case 1
+The position outside chunk is 0xf698d050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698d04c and 0xf698e038
+Allocating memory of size 4072 at line 262 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf698f050 and size is 4096
+case 1
+The position outside chunk is 0xf698e050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698e04c and 0xf698f038
+Allocating memory of size 4072 at line 263 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6990050 and size is 4096
+case 1
+The position outside chunk is 0xf698f050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf698f04c and 0xf6990038
+Allocating memory of size 4072 at line 264 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6991050 and size is 4096
+case 1
+The position outside chunk is 0xf6990050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699004c and 0xf6991038
+Allocating memory of size 4072 at line 265 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6992050 and size is 4096
+case 1
+The position outside chunk is 0xf6991050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699104c and 0xf6992038
+Allocating memory of size 4072 at line 266 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6993050 and size is 4096
+case 1
+The position outside chunk is 0xf6992050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699204c and 0xf6993038
+Allocating memory of size 4072 at line 267 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6994050 and size is 4096
+case 1
+The position outside chunk is 0xf6993050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699304c and 0xf6994038
+Allocating memory of size 4072 at line 268 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6995050 and size is 4096
+case 1
+The position outside chunk is 0xf6994050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699404c and 0xf6995038
+Allocating memory of size 4072 at line 269 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6996050 and size is 4096
+case 1
+The position outside chunk is 0xf6995050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699504c and 0xf6996038
+Allocating memory of size 4072 at line 270 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6997050 and size is 4096
+case 1
+The position outside chunk is 0xf6996050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699604c and 0xf6997038
+Allocating memory of size 4072 at line 271 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6998050 and size is 4096
+case 1
+The position outside chunk is 0xf6997050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699704c and 0xf6998038
+Allocating memory of size 4072 at line 272 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf6999050 and size is 4096
+case 1
+The position outside chunk is 0xf6998050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699804c and 0xf6999038
+Allocating memory of size 4072 at line 273 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf699a050 and size is 4096
+case 1
+The position outside chunk is 0xf6999050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699904c and 0xf699a038
+Allocating memory of size 4072 at line 274 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf699b050 and size is 4096
+case 1
+The position outside chunk is 0xf699a050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699a04c and 0xf699b038
+Allocating memory of size 4072 at line 275 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf699c050 and size is 4096
+case 1
+The position outside chunk is 0xf699b050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699b04c and 0xf699c038
+Allocating memory of size 4072 at line 276 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf699d050 and size is 4096
+case 1
+The position outside chunk is 0xf699c050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699c04c and 0xf699d038
+Allocating memory of size 4072 at line 277 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf699e050 and size is 4096
+case 1
+The position outside chunk is 0xf699d050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699d04c and 0xf699e038
+Allocating memory of size 4072 at line 278 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf699f050 and size is 4096
+case 1
+The position outside chunk is 0xf699e050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699e04c and 0xf699f038
+Allocating memory of size 4072 at line 279 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a0050 and size is 4096
+case 1
+The position outside chunk is 0xf699f050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf699f04c and 0xf69a0038
+Allocating memory of size 4072 at line 280 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a1050 and size is 4096
+case 1
+The position outside chunk is 0xf69a0050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a004c and 0xf69a1038
+Allocating memory of size 4072 at line 281 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a2050 and size is 4096
+case 1
+The position outside chunk is 0xf69a1050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a104c and 0xf69a2038
+Allocating memory of size 4072 at line 282 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a3050 and size is 4096
+case 1
+The position outside chunk is 0xf69a2050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a204c and 0xf69a3038
+Allocating memory of size 4072 at line 283 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a4050 and size is 4096
+case 1
+The position outside chunk is 0xf69a3050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a304c and 0xf69a4038
+Allocating memory of size 4072 at line 284 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a5050 and size is 4096
+case 1
+The position outside chunk is 0xf69a4050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a404c and 0xf69a5038
+Allocating memory of size 4072 at line 285 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a6050 and size is 4096
+case 1
+The position outside chunk is 0xf69a5050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a504c and 0xf69a6038
+Allocating memory of size 4072 at line 286 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a7050 and size is 4096
+case 1
+The position outside chunk is 0xf69a6050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a604c and 0xf69a7038
+Allocating memory of size 4072 at line 287 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a8050 and size is 4096
+case 1
+The position outside chunk is 0xf69a7050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a704c and 0xf69a8038
+Allocating memory of size 4072 at line 288 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69a9050 and size is 4096
+case 1
+The position outside chunk is 0xf69a8050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a804c and 0xf69a9038
+Allocating memory of size 4072 at line 289 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69aa050 and size is 4096
+case 1
+The position outside chunk is 0xf69a9050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69a904c and 0xf69aa038
+Allocating memory of size 4072 at line 290 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69ab050 and size is 4096
+case 1
+The position outside chunk is 0xf69aa050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69aa04c and 0xf69ab038
+Allocating memory of size 4072 at line 291 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69ac050 and size is 4096
+case 1
+The position outside chunk is 0xf69ab050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69ab04c and 0xf69ac038
+Allocating memory of size 4072 at line 292 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69ad050 and size is 4096
+case 1
+The position outside chunk is 0xf69ac050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69ac04c and 0xf69ad038
+Allocating memory of size 4072 at line 293 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69ae050 and size is 4096
+case 1
+The position outside chunk is 0xf69ad050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69ad04c and 0xf69ae038
+Allocating memory of size 4072 at line 294 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69af050 and size is 4096
+case 1
+The position outside chunk is 0xf69ae050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69ae04c and 0xf69af038
+Allocating memory of size 4072 at line 295 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b0050 and size is 4096
+case 1
+The position outside chunk is 0xf69af050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69af04c and 0xf69b0038
+Allocating memory of size 4072 at line 296 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b1050 and size is 4096
+case 1
+The position outside chunk is 0xf69b0050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b004c and 0xf69b1038
+Allocating memory of size 4072 at line 297 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b2050 and size is 4096
+case 1
+The position outside chunk is 0xf69b1050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b104c and 0xf69b2038
+Allocating memory of size 4072 at line 298 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b3050 and size is 4096
+case 1
+The position outside chunk is 0xf69b2050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b204c and 0xf69b3038
+Allocating memory of size 4072 at line 299 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b4050 and size is 4096
+case 1
+The position outside chunk is 0xf69b3050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b304c and 0xf69b4038
+Allocating memory of size 4072 at line 300 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b5050 and size is 4096
+case 1
+The position outside chunk is 0xf69b4050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b404c and 0xf69b5038
+Allocating memory of size 4072 at line 301 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b6050 and size is 4096
+case 1
+The position outside chunk is 0xf69b5050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b504c and 0xf69b6038
+Allocating memory of size 4072 at line 302 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b7050 and size is 4096
+case 1
+The position outside chunk is 0xf69b6050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b604c and 0xf69b7038
+Allocating memory of size 4072 at line 303 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b8050 and size is 4096
+case 1
+The position outside chunk is 0xf69b7050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b704c and 0xf69b8038
+Allocating memory of size 4072 at line 304 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69b9050 and size is 4096
+case 1
+The position outside chunk is 0xf69b8050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b804c and 0xf69b9038
+Allocating memory of size 4072 at line 305 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69ba050 and size is 4096
+case 1
+The position outside chunk is 0xf69b9050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69b904c and 0xf69ba038
+Allocating memory of size 4072 at line 306 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69bb050 and size is 4096
+case 1
+The position outside chunk is 0xf69ba050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69ba04c and 0xf69bb038
+Allocating memory of size 4072 at line 307 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69bc050 and size is 4096
+case 1
+The position outside chunk is 0xf69bb050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69bb04c and 0xf69bc038
+Allocating memory of size 4072 at line 308 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69bd050 and size is 4096
+case 1
+The position outside chunk is 0xf69bc050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69bc04c and 0xf69bd038
+Allocating memory of size 4072 at line 309 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69be050 and size is 4096
+case 1
+The position outside chunk is 0xf69bd050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69bd04c and 0xf69be038
+Allocating memory of size 4072 at line 310 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69bf050 and size is 4096
+case 1
+The position outside chunk is 0xf69be050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69be04c and 0xf69bf038
+Allocating memory of size 4072 at line 311 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c0050 and size is 4096
+case 1
+The position outside chunk is 0xf69bf050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69bf04c and 0xf69c0038
+Allocating memory of size 4072 at line 312 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c1050 and size is 4096
+case 1
+The position outside chunk is 0xf69c0050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c004c and 0xf69c1038
+Allocating memory of size 4072 at line 313 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c2050 and size is 4096
+case 1
+The position outside chunk is 0xf69c1050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c104c and 0xf69c2038
+Allocating memory of size 4072 at line 314 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c3050 and size is 4096
+case 1
+The position outside chunk is 0xf69c2050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c204c and 0xf69c3038
+Allocating memory of size 4072 at line 315 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c4050 and size is 4096
+case 1
+The position outside chunk is 0xf69c3050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c304c and 0xf69c4038
+Allocating memory of size 4072 at line 316 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c5050 and size is 4096
+case 1
+The position outside chunk is 0xf69c4050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c404c and 0xf69c5038
+Allocating memory of size 4072 at line 317 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c6050 and size is 4096
+case 1
+The position outside chunk is 0xf69c5050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c504c and 0xf69c6038
+Allocating memory of size 4072 at line 318 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c7050 and size is 4096
+case 1
+The position outside chunk is 0xf69c6050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c604c and 0xf69c7038
+Allocating memory of size 4072 at line 319 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c8050 and size is 4096
+case 1
+The position outside chunk is 0xf69c7050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c704c and 0xf69c8038
+Allocating memory of size 4072 at line 320 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69c9050 and size is 4096
+case 1
+The position outside chunk is 0xf69c8050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c804c and 0xf69c9038
+Allocating memory of size 4072 at line 321 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69ca050 and size is 4096
+case 1
+The position outside chunk is 0xf69c9050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69c904c and 0xf69ca038
+Allocating memory of size 4072 at line 322 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69cb050 and size is 4096
+case 1
+The position outside chunk is 0xf69ca050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69ca04c and 0xf69cb038
+Allocating memory of size 4072 at line 323 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69cc050 and size is 4096
+case 1
+The position outside chunk is 0xf69cb050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69cb04c and 0xf69cc038
+Allocating memory of size 4072 at line 324 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69cd050 and size is 4096
+case 1
+The position outside chunk is 0xf69cc050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69cc04c and 0xf69cd038
+Allocating memory of size 4072 at line 325 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69ce050 and size is 4096
+case 1
+The position outside chunk is 0xf69cd050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69cd04c and 0xf69ce038
+Allocating memory of size 4072 at line 326 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69cf050 and size is 4096
+case 1
+The position outside chunk is 0xf69ce050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69ce04c and 0xf69cf038
+Allocating memory of size 4072 at line 327 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d0050 and size is 4096
+case 1
+The position outside chunk is 0xf69cf050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69cf04c and 0xf69d0038
+Allocating memory of size 4072 at line 328 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d1050 and size is 4096
+case 1
+The position outside chunk is 0xf69d0050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d004c and 0xf69d1038
+Allocating memory of size 4072 at line 329 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d2050 and size is 4096
+case 1
+The position outside chunk is 0xf69d1050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d104c and 0xf69d2038
+Allocating memory of size 4072 at line 330 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d3050 and size is 4096
+case 1
+The position outside chunk is 0xf69d2050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d204c and 0xf69d3038
+Allocating memory of size 4072 at line 331 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d4050 and size is 4096
+case 1
+The position outside chunk is 0xf69d3050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d304c and 0xf69d4038
+Allocating memory of size 4072 at line 332 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d5050 and size is 4096
+case 1
+The position outside chunk is 0xf69d4050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d404c and 0xf69d5038
+Allocating memory of size 4072 at line 333 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d6050 and size is 4096
+case 1
+The position outside chunk is 0xf69d5050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d504c and 0xf69d6038
+Allocating memory of size 4072 at line 334 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d7050 and size is 4096
+case 1
+The position outside chunk is 0xf69d6050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d604c and 0xf69d7038
+Allocating memory of size 4072 at line 335 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d8050 and size is 4096
+case 1
+The position outside chunk is 0xf69d7050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d704c and 0xf69d8038
+Allocating memory of size 4072 at line 336 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69d9050 and size is 4096
+case 1
+The position outside chunk is 0xf69d8050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d804c and 0xf69d9038
+Allocating memory of size 4072 at line 337 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69da050 and size is 4096
+case 1
+The position outside chunk is 0xf69d9050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69d904c and 0xf69da038
+Allocating memory of size 4072 at line 338 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69db050 and size is 4096
+case 1
+The position outside chunk is 0xf69da050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69da04c and 0xf69db038
+Allocating memory of size 4072 at line 339 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69dc050 and size is 4096
+case 1
+The position outside chunk is 0xf69db050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69db04c and 0xf69dc038
+Allocating memory of size 4072 at line 340 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69dd050 and size is 4096
+case 1
+The position outside chunk is 0xf69dc050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69dc04c and 0xf69dd038
+Allocating memory of size 4072 at line 341 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69de050 and size is 4096
+case 1
+The position outside chunk is 0xf69dd050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69dd04c and 0xf69de038
+Allocating memory of size 4072 at line 342 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69df050 and size is 4096
+case 1
+The position outside chunk is 0xf69de050
+The size needed to be allocated is 4080
+ within 4096
+The pred and succ is 0 and 0
+4080 is put at 0xf69de04c and 0xf69df038
+Allocating memory of size 72 at line 343 $$$$$$$$$$$$$$$
+The boundary is extended to 0xf69e0050 and size is 4096
+case 1
+The position outside chunk is 0xf69df050
+The size needed to be allocated is 80
+ within 4096
+The pred and succ is 0 and 0
+80 is put at 0xf69df04c and 0xf69df098
+4016 is put at 0xf69df09c and 0xf69e0048
+Allocating memory of size 160 at line 344 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69df0a0, the value is 4016
+The position inside chunk is 0xf69df0a0
+The size needed to be allocated is 168
+ within 4016
+The pred and succ is 0 and 0
+168 is put at 0xf69df09c and 0xf69df140
+3848 is put at 0xf69df144 and 0xf69e0048
+Allocating memory of size 120 at line 345 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69df148, the value is 3848
+The position inside chunk is 0xf69df148
+The size needed to be allocated is 128
+ within 3848
+The pred and succ is 0 and 0
+128 is put at 0xf69df144 and 0xf69df1c0
+3720 is put at 0xf69df1c4 and 0xf69e0048
+The size that is freed is 128 and the position is at 0xf69df148 at line 346 fffffffff
+The value in next pointer 0xf69df1c8 is 3720
+The pred and succ is 0 and 0
+case 4
+The free list pointer in coalesce is at 0xf69df148
+The size that is freed is 80 and the position is at 0xf69df050 at line 347 fffffffff
+The value in next pointer 0xf69df0a0 is 169
+The value in previous 0xf69df040 header is 16 and in previous foot is 16
+The size of ptr is 80 and previous is 16
+case 3
+The free list pointer in coalesce is at 0xf69df148
+Allocating memory of size 4072 at line 348 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69df148, the value is 3848
+The boundary is extended to 0xf69e1050 and size is 4096
+The value in next pointer 0xf69e1050 is 1
+The value in previous 0xf69df148 header is 3848 and in previous foot is 3848
+The size of ptr is 4096 and previous is 3848
+case 3
+The free list pointer in coalesce is at 0xf69df148
+The position outside chunk is 0xf69df148
+The size needed to be allocated is 4080
+ within 7944
+The pred and succ is 0 and 0
+4080 is put at 0xf69df144 and 0xf69e0130
+3864 is put at 0xf69e0134 and 0xf69e1048
+Allocating memory of size 4072 at line 349 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e0138, the value is 3864
+The boundary is extended to 0xf69e2050 and size is 4096
+The value in next pointer 0xf69e2050 is 1
+The value in previous 0xf69e0138 header is 3864 and in previous foot is 3864
+The size of ptr is 4096 and previous is 3864
+case 3
+The free list pointer in coalesce is at 0xf69e0138
+The position outside chunk is 0xf69e0138
+The size needed to be allocated is 4080
+ within 7960
+The pred and succ is 0 and 0
+4080 is put at 0xf69e0134 and 0xf69e1120
+3880 is put at 0xf69e1124 and 0xf69e2048
+Allocating memory of size 72 at line 350 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e1128, the value is 3880
+The position inside chunk is 0xf69e1128
+The size needed to be allocated is 80
+ within 3880
+The pred and succ is 0 and 0
+80 is put at 0xf69e1124 and 0xf69e1170
+3800 is put at 0xf69e1174 and 0xf69e2048
+Allocating memory of size 160 at line 351 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e1178, the value is 3800
+The position inside chunk is 0xf69e1178
+The size needed to be allocated is 168
+ within 3800
+The pred and succ is 0 and 0
+168 is put at 0xf69e1174 and 0xf69e1218
+3632 is put at 0xf69e121c and 0xf69e2048
+The size that is freed is 80 and the position is at 0xf69e1128 at line 352 fffffffff
+The value in next pointer 0xf69e1178 is 169
+case 2
+The free list pointer in coalesce is at 0xf69e1128
+Allocating memory of size 72 at line 353 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e1128, the value is 80
+The position inside chunk is 0xf69e1128
+The size needed to be allocated is 80
+ within 80
+The pred and succ is 0 and f69e1220
+80 is put at 0xf69e1124 and 0xf69e1170
+Allocating memory of size 160 at line 354 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e1220, the value is 3632
+The position inside chunk is 0xf69e1220
+The size needed to be allocated is 168
+ within 3632
+The pred and succ is 0 and 0
+168 is put at 0xf69e121c and 0xf69e12c0
+3464 is put at 0xf69e12c4 and 0xf69e2048
+The size that is freed is 80 and the position is at 0xf69e1128 at line 355 fffffffff
+The value in next pointer 0xf69e1178 is 0
+The pred and succ is 5c5c5c5c and 5c5c5c5c
+case 4
+The free list pointer in coalesce is at 0xf69e12c8
+Allocating memory of size 72 at line 356 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e12c8, the value is 3464
+The position inside chunk is 0xf69e12c8
+The size needed to be allocated is 80
+ within 3464
+The pred and succ is 0 and 0
+80 is put at 0xf69e12c4 and 0xf69e1310
+3384 is put at 0xf69e1314 and 0xf69e2048
+Allocating memory of size 160 at line 357 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e1318, the value is 3384
+The position inside chunk is 0xf69e1318
+The size needed to be allocated is 168
+ within 3384
+The pred and succ is 0 and 0
+168 is put at 0xf69e1314 and 0xf69e13b8
+3216 is put at 0xf69e13bc and 0xf69e2048
+The size that is freed is 80 and the position is at 0xf69e12c8 at line 358 fffffffff
+The value in next pointer 0xf69e1318 is 169
+case 2
+The free list pointer in coalesce is at 0xf69e12c8
+Allocating memory of size 72 at line 359 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e12c8, the value is 80
+The position inside chunk is 0xf69e12c8
+The size needed to be allocated is 80
+ within 80
+The pred and succ is 0 and f69e13c0
+80 is put at 0xf69e12c4 and 0xf69e1310
+Allocating memory of size 160 at line 360 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e13c0, the value is 3216
+The position inside chunk is 0xf69e13c0
+The size needed to be allocated is 168
+ within 3216
+The pred and succ is 0 and 0
+168 is put at 0xf69e13bc and 0xf69e1460
+3048 is put at 0xf69e1464 and 0xf69e2048
+The size that is freed is 80 and the position is at 0xf69e12c8 at line 361 fffffffff
+The value in next pointer 0xf69e1318 is 0
+The pred and succ is 60606060 and 60606060
+case 4
+The free list pointer in coalesce is at 0xf69e1468
+Allocating memory of size 4072 at line 362 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e1468, the value is 3048
+The boundary is extended to 0xf69e3050 and size is 4096
+The value in next pointer 0xf69e3050 is 1
+The value in previous 0xf69e1468 header is 3048 and in previous foot is 3048
+The size of ptr is 4096 and previous is 3048
+case 3
+The free list pointer in coalesce is at 0xf69e1468
+The position outside chunk is 0xf69e1468
+The size needed to be allocated is 4080
+ within 7144
+The pred and succ is 0 and 0
+4080 is put at 0xf69e1464 and 0xf69e2450
+3064 is put at 0xf69e2454 and 0xf69e3048
+Allocating memory of size 72 at line 363 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e2458, the value is 3064
+The position inside chunk is 0xf69e2458
+The size needed to be allocated is 80
+ within 3064
+The pred and succ is 0 and 0
+80 is put at 0xf69e2454 and 0xf69e24a0
+2984 is put at 0xf69e24a4 and 0xf69e3048
+Allocating memory of size 160 at line 364 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e24a8, the value is 2984
+The position inside chunk is 0xf69e24a8
+The size needed to be allocated is 168
+ within 2984
+The pred and succ is 0 and 0
+168 is put at 0xf69e24a4 and 0xf69e2548
+2816 is put at 0xf69e254c and 0xf69e3048
+The size that is freed is 80 and the position is at 0xf69e2458 at line 365 fffffffff
+The value in next pointer 0xf69e24a8 is 169
+case 2
+The free list pointer in coalesce is at 0xf69e2458
+Allocating memory of size 72 at line 366 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e2458, the value is 80
+The position inside chunk is 0xf69e2458
+The size needed to be allocated is 80
+ within 80
+The pred and succ is 0 and f69e2550
+80 is put at 0xf69e2454 and 0xf69e24a0
+Allocating memory of size 160 at line 367 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e2550, the value is 2816
+The position inside chunk is 0xf69e2550
+The size needed to be allocated is 168
+ within 2816
+The pred and succ is 0 and 0
+168 is put at 0xf69e254c and 0xf69e25f0
+2648 is put at 0xf69e25f4 and 0xf69e3048
+The size that is freed is 80 and the position is at 0xf69e2458 at line 368 fffffffff
+The value in next pointer 0xf69e24a8 is 0
+The pred and succ is 65656565 and 65656565
+case 4
+The free list pointer in coalesce is at 0xf69e25f8
+Allocating memory of size 72 at line 369 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e25f8, the value is 2648
+The position inside chunk is 0xf69e25f8
+The size needed to be allocated is 80
+ within 2648
+The pred and succ is 0 and 0
+80 is put at 0xf69e25f4 and 0xf69e2640
+2568 is put at 0xf69e2644 and 0xf69e3048
+Allocating memory of size 160 at line 370 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e2648, the value is 2568
+The position inside chunk is 0xf69e2648
+The size needed to be allocated is 168
+ within 2568
+The pred and succ is 0 and 0
+168 is put at 0xf69e2644 and 0xf69e26e8
+2400 is put at 0xf69e26ec and 0xf69e3048
+The size that is freed is 80 and the position is at 0xf69e25f8 at line 371 fffffffff
+The value in next pointer 0xf69e2648 is 169
+case 2
+The free list pointer in coalesce is at 0xf69e25f8
+Allocating memory of size 72 at line 372 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e25f8, the value is 80
+The position inside chunk is 0xf69e25f8
+The size needed to be allocated is 80
+ within 80
+The pred and succ is 0 and f69e26f0
+80 is put at 0xf69e25f4 and 0xf69e2640
+Allocating memory of size 160 at line 373 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e26f0, the value is 2400
+The position inside chunk is 0xf69e26f0
+The size needed to be allocated is 168
+ within 2400
+The pred and succ is 0 and 0
+168 is put at 0xf69e26ec and 0xf69e2790
+2232 is put at 0xf69e2794 and 0xf69e3048
+The size that is freed is 80 and the position is at 0xf69e25f8 at line 374 fffffffff
+The value in next pointer 0xf69e2648 is 0
+The pred and succ is 69696969 and 69696969
+case 4
+The free list pointer in coalesce is at 0xf69e2798
+Allocating memory of size 72 at line 375 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e2798, the value is 2232
+The position inside chunk is 0xf69e2798
+The size needed to be allocated is 80
+ within 2232
+The pred and succ is 0 and 0
+80 is put at 0xf69e2794 and 0xf69e27e0
+2152 is put at 0xf69e27e4 and 0xf69e3048
+Allocating memory of size 4072 at line 376 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e27e8, the value is 2152
+The boundary is extended to 0xf69e4050 and size is 4096
+The value in next pointer 0xf69e4050 is 1
+The value in previous 0xf69e27e8 header is 2152 and in previous foot is 2152
+The size of ptr is 4096 and previous is 2152
+case 3
+The free list pointer in coalesce is at 0xf69e27e8
+The position outside chunk is 0xf69e27e8
+The size needed to be allocated is 4080
+ within 6248
+The pred and succ is 0 and 0
+4080 is put at 0xf69e27e4 and 0xf69e37d0
+2168 is put at 0xf69e37d4 and 0xf69e4048
+Allocating memory of size 72 at line 377 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e37d8, the value is 2168
+The position inside chunk is 0xf69e37d8
+The size needed to be allocated is 80
+ within 2168
+The pred and succ is 0 and 0
+80 is put at 0xf69e37d4 and 0xf69e3820
+2088 is put at 0xf69e3824 and 0xf69e4048
+Allocating memory of size 4072 at line 378 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e3828, the value is 2088
+The boundary is extended to 0xf69e5050 and size is 4096
+The value in next pointer 0xf69e5050 is 1
+The value in previous 0xf69e3828 header is 2088 and in previous foot is 2088
+The size of ptr is 4096 and previous is 2088
+case 3
+The free list pointer in coalesce is at 0xf69e3828
+The position outside chunk is 0xf69e3828
+The size needed to be allocated is 4080
+ within 6184
+The pred and succ is 0 and 0
+4080 is put at 0xf69e3824 and 0xf69e4810
+2104 is put at 0xf69e4814 and 0xf69e5048
+Allocating memory of size 4072 at line 379 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e4818, the value is 2104
+The boundary is extended to 0xf69e6050 and size is 4096
+The value in next pointer 0xf69e6050 is 1
+The value in previous 0xf69e4818 header is 2104 and in previous foot is 2104
+The size of ptr is 4096 and previous is 2104
+case 3
+The free list pointer in coalesce is at 0xf69e4818
+The position outside chunk is 0xf69e4818
+The size needed to be allocated is 4080
+ within 6200
+The pred and succ is 0 and 0
+4080 is put at 0xf69e4814 and 0xf69e5800
+2120 is put at 0xf69e5804 and 0xf69e6048
+Allocating memory of size 4072 at line 380 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e5808, the value is 2120
+The boundary is extended to 0xf69e7050 and size is 4096
+The value in next pointer 0xf69e7050 is 1
+The value in previous 0xf69e5808 header is 2120 and in previous foot is 2120
+The size of ptr is 4096 and previous is 2120
+case 3
+The free list pointer in coalesce is at 0xf69e5808
+The position outside chunk is 0xf69e5808
+The size needed to be allocated is 4080
+ within 6216
+The pred and succ is 0 and 0
+4080 is put at 0xf69e5804 and 0xf69e67f0
+2136 is put at 0xf69e67f4 and 0xf69e7048
+Allocating memory of size 4072 at line 381 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e67f8, the value is 2136
+The boundary is extended to 0xf69e8050 and size is 4096
+The value in next pointer 0xf69e8050 is 1
+The value in previous 0xf69e67f8 header is 2136 and in previous foot is 2136
+The size of ptr is 4096 and previous is 2136
+case 3
+The free list pointer in coalesce is at 0xf69e67f8
+The position outside chunk is 0xf69e67f8
+The size needed to be allocated is 4080
+ within 6232
+The pred and succ is 0 and 0
+4080 is put at 0xf69e67f4 and 0xf69e77e0
+2152 is put at 0xf69e77e4 and 0xf69e8048
+Allocating memory of size 4072 at line 382 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e77e8, the value is 2152
+The boundary is extended to 0xf69e9050 and size is 4096
+The value in next pointer 0xf69e9050 is 1
+The value in previous 0xf69e77e8 header is 2152 and in previous foot is 2152
+The size of ptr is 4096 and previous is 2152
+case 3
+The free list pointer in coalesce is at 0xf69e77e8
+The position outside chunk is 0xf69e77e8
+The size needed to be allocated is 4080
+ within 6248
+The pred and succ is 0 and 0
+4080 is put at 0xf69e77e4 and 0xf69e87d0
+2168 is put at 0xf69e87d4 and 0xf69e9048
+Allocating memory of size 4072 at line 383 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e87d8, the value is 2168
+The boundary is extended to 0xf69ea050 and size is 4096
+The value in next pointer 0xf69ea050 is 1
+The value in previous 0xf69e87d8 header is 2168 and in previous foot is 2168
+The size of ptr is 4096 and previous is 2168
+case 3
+The free list pointer in coalesce is at 0xf69e87d8
+The position outside chunk is 0xf69e87d8
+The size needed to be allocated is 4080
+ within 6264
+The pred and succ is 0 and 0
+4080 is put at 0xf69e87d4 and 0xf69e97c0
+2184 is put at 0xf69e97c4 and 0xf69ea048
+Allocating memory of size 4072 at line 384 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e97c8, the value is 2184
+The boundary is extended to 0xf69eb050 and size is 4096
+The value in next pointer 0xf69eb050 is 1
+The value in previous 0xf69e97c8 header is 2184 and in previous foot is 2184
+The size of ptr is 4096 and previous is 2184
+case 3
+The free list pointer in coalesce is at 0xf69e97c8
+The position outside chunk is 0xf69e97c8
+The size needed to be allocated is 4080
+ within 6280
+The pred and succ is 0 and 0
+4080 is put at 0xf69e97c4 and 0xf69ea7b0
+2200 is put at 0xf69ea7b4 and 0xf69eb048
+Allocating memory of size 4072 at line 385 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69ea7b8, the value is 2200
+The boundary is extended to 0xf69ec050 and size is 4096
+The value in next pointer 0xf69ec050 is 1
+The value in previous 0xf69ea7b8 header is 2200 and in previous foot is 2200
+The size of ptr is 4096 and previous is 2200
+case 3
+The free list pointer in coalesce is at 0xf69ea7b8
+The position outside chunk is 0xf69ea7b8
+The size needed to be allocated is 4080
+ within 6296
+The pred and succ is 0 and 0
+4080 is put at 0xf69ea7b4 and 0xf69eb7a0
+2216 is put at 0xf69eb7a4 and 0xf69ec048
+Allocating memory of size 4072 at line 386 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69eb7a8, the value is 2216
+The boundary is extended to 0xf69ed050 and size is 4096
+The value in next pointer 0xf69ed050 is 1
+The value in previous 0xf69eb7a8 header is 2216 and in previous foot is 2216
+The size of ptr is 4096 and previous is 2216
+case 3
+The free list pointer in coalesce is at 0xf69eb7a8
+The position outside chunk is 0xf69eb7a8
+The size needed to be allocated is 4080
+ within 6312
+The pred and succ is 0 and 0
+4080 is put at 0xf69eb7a4 and 0xf69ec790
+2232 is put at 0xf69ec794 and 0xf69ed048
+Allocating memory of size 4072 at line 387 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69ec798, the value is 2232
+The boundary is extended to 0xf69ee050 and size is 4096
+The value in next pointer 0xf69ee050 is 1
+The value in previous 0xf69ec798 header is 2232 and in previous foot is 2232
+The size of ptr is 4096 and previous is 2232
+case 3
+The free list pointer in coalesce is at 0xf69ec798
+The position outside chunk is 0xf69ec798
+The size needed to be allocated is 4080
+ within 6328
+The pred and succ is 0 and 0
+4080 is put at 0xf69ec794 and 0xf69ed780
+2248 is put at 0xf69ed784 and 0xf69ee048
+Allocating memory of size 4072 at line 388 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69ed788, the value is 2248
+The boundary is extended to 0xf69ef050 and size is 4096
+The value in next pointer 0xf69ef050 is 1
+The value in previous 0xf69ed788 header is 2248 and in previous foot is 2248
+The size of ptr is 4096 and previous is 2248
+case 3
+The free list pointer in coalesce is at 0xf69ed788
+The position outside chunk is 0xf69ed788
+The size needed to be allocated is 4080
+ within 6344
+The pred and succ is 0 and 0
+4080 is put at 0xf69ed784 and 0xf69ee770
+2264 is put at 0xf69ee774 and 0xf69ef048
+Allocating memory of size 4072 at line 389 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69ee778, the value is 2264
+The boundary is extended to 0xf69f0050 and size is 4096
+The value in next pointer 0xf69f0050 is 1
+The value in previous 0xf69ee778 header is 2264 and in previous foot is 2264
+The size of ptr is 4096 and previous is 2264
+case 3
+The free list pointer in coalesce is at 0xf69ee778
+The position outside chunk is 0xf69ee778
+The size needed to be allocated is 4080
+ within 6360
+The pred and succ is 0 and 0
+4080 is put at 0xf69ee774 and 0xf69ef760
+2280 is put at 0xf69ef764 and 0xf69f0048
+Allocating memory of size 4072 at line 390 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69ef768, the value is 2280
+The boundary is extended to 0xf69f1050 and size is 4096
+The value in next pointer 0xf69f1050 is 1
+The value in previous 0xf69ef768 header is 2280 and in previous foot is 2280
+The size of ptr is 4096 and previous is 2280
+case 3
+The free list pointer in coalesce is at 0xf69ef768
+The position outside chunk is 0xf69ef768
+The size needed to be allocated is 4080
+ within 6376
+The pred and succ is 0 and 0
+4080 is put at 0xf69ef764 and 0xf69f0750
+2296 is put at 0xf69f0754 and 0xf69f1048
+Allocating memory of size 4072 at line 391 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f0758, the value is 2296
+The boundary is extended to 0xf69f2050 and size is 4096
+The value in next pointer 0xf69f2050 is 1
+The value in previous 0xf69f0758 header is 2296 and in previous foot is 2296
+The size of ptr is 4096 and previous is 2296
+case 3
+The free list pointer in coalesce is at 0xf69f0758
+The position outside chunk is 0xf69f0758
+The size needed to be allocated is 4080
+ within 6392
+The pred and succ is 0 and 0
+4080 is put at 0xf69f0754 and 0xf69f1740
+2312 is put at 0xf69f1744 and 0xf69f2048
+Allocating memory of size 4072 at line 392 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f1748, the value is 2312
+The boundary is extended to 0xf69f3050 and size is 4096
+The value in next pointer 0xf69f3050 is 1
+The value in previous 0xf69f1748 header is 2312 and in previous foot is 2312
+The size of ptr is 4096 and previous is 2312
+case 3
+The free list pointer in coalesce is at 0xf69f1748
+The position outside chunk is 0xf69f1748
+The size needed to be allocated is 4080
+ within 6408
+The pred and succ is 0 and 0
+4080 is put at 0xf69f1744 and 0xf69f2730
+2328 is put at 0xf69f2734 and 0xf69f3048
+Allocating memory of size 4072 at line 393 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f2738, the value is 2328
+The boundary is extended to 0xf69f4050 and size is 4096
+The value in next pointer 0xf69f4050 is 1
+The value in previous 0xf69f2738 header is 2328 and in previous foot is 2328
+The size of ptr is 4096 and previous is 2328
+case 3
+The free list pointer in coalesce is at 0xf69f2738
+The position outside chunk is 0xf69f2738
+The size needed to be allocated is 4080
+ within 6424
+The pred and succ is 0 and 0
+4080 is put at 0xf69f2734 and 0xf69f3720
+2344 is put at 0xf69f3724 and 0xf69f4048
+Allocating memory of size 4072 at line 394 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f3728, the value is 2344
+The boundary is extended to 0xf69f5050 and size is 4096
+The value in next pointer 0xf69f5050 is 1
+The value in previous 0xf69f3728 header is 2344 and in previous foot is 2344
+The size of ptr is 4096 and previous is 2344
+case 3
+The free list pointer in coalesce is at 0xf69f3728
+The position outside chunk is 0xf69f3728
+The size needed to be allocated is 4080
+ within 6440
+The pred and succ is 0 and 0
+4080 is put at 0xf69f3724 and 0xf69f4710
+2360 is put at 0xf69f4714 and 0xf69f5048
+Allocating memory of size 4072 at line 395 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f4718, the value is 2360
+The boundary is extended to 0xf69f6050 and size is 4096
+The value in next pointer 0xf69f6050 is 1
+The value in previous 0xf69f4718 header is 2360 and in previous foot is 2360
+The size of ptr is 4096 and previous is 2360
+case 3
+The free list pointer in coalesce is at 0xf69f4718
+The position outside chunk is 0xf69f4718
+The size needed to be allocated is 4080
+ within 6456
+The pred and succ is 0 and 0
+4080 is put at 0xf69f4714 and 0xf69f5700
+2376 is put at 0xf69f5704 and 0xf69f6048
+Allocating memory of size 4072 at line 396 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f5708, the value is 2376
+The boundary is extended to 0xf69f7050 and size is 4096
+The value in next pointer 0xf69f7050 is 1
+The value in previous 0xf69f5708 header is 2376 and in previous foot is 2376
+The size of ptr is 4096 and previous is 2376
+case 3
+The free list pointer in coalesce is at 0xf69f5708
+The position outside chunk is 0xf69f5708
+The size needed to be allocated is 4080
+ within 6472
+The pred and succ is 0 and 0
+4080 is put at 0xf69f5704 and 0xf69f66f0
+2392 is put at 0xf69f66f4 and 0xf69f7048
+Allocating memory of size 4072 at line 397 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f66f8, the value is 2392
+The boundary is extended to 0xf69f8050 and size is 4096
+The value in next pointer 0xf69f8050 is 1
+The value in previous 0xf69f66f8 header is 2392 and in previous foot is 2392
+The size of ptr is 4096 and previous is 2392
+case 3
+The free list pointer in coalesce is at 0xf69f66f8
+The position outside chunk is 0xf69f66f8
+The size needed to be allocated is 4080
+ within 6488
+The pred and succ is 0 and 0
+4080 is put at 0xf69f66f4 and 0xf69f76e0
+2408 is put at 0xf69f76e4 and 0xf69f8048
+Allocating memory of size 4072 at line 398 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f76e8, the value is 2408
+The boundary is extended to 0xf69f9050 and size is 4096
+The value in next pointer 0xf69f9050 is 1
+The value in previous 0xf69f76e8 header is 2408 and in previous foot is 2408
+The size of ptr is 4096 and previous is 2408
+case 3
+The free list pointer in coalesce is at 0xf69f76e8
+The position outside chunk is 0xf69f76e8
+The size needed to be allocated is 4080
+ within 6504
+The pred and succ is 0 and 0
+4080 is put at 0xf69f76e4 and 0xf69f86d0
+2424 is put at 0xf69f86d4 and 0xf69f9048
+Allocating memory of size 4072 at line 399 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f86d8, the value is 2424
+The boundary is extended to 0xf69fa050 and size is 4096
+The value in next pointer 0xf69fa050 is 1
+The value in previous 0xf69f86d8 header is 2424 and in previous foot is 2424
+The size of ptr is 4096 and previous is 2424
+case 3
+The free list pointer in coalesce is at 0xf69f86d8
+The position outside chunk is 0xf69f86d8
+The size needed to be allocated is 4080
+ within 6520
+The pred and succ is 0 and 0
+4080 is put at 0xf69f86d4 and 0xf69f96c0
+2440 is put at 0xf69f96c4 and 0xf69fa048
+Allocating memory of size 4072 at line 400 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69f96c8, the value is 2440
+The boundary is extended to 0xf69fb050 and size is 4096
+The value in next pointer 0xf69fb050 is 1
+The value in previous 0xf69f96c8 header is 2440 and in previous foot is 2440
+The size of ptr is 4096 and previous is 2440
+case 3
+The free list pointer in coalesce is at 0xf69f96c8
+The position outside chunk is 0xf69f96c8
+The size needed to be allocated is 4080
+ within 6536
+The pred and succ is 0 and 0
+4080 is put at 0xf69f96c4 and 0xf69fa6b0
+2456 is put at 0xf69fa6b4 and 0xf69fb048
+Allocating memory of size 4072 at line 401 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69fa6b8, the value is 2456
+The boundary is extended to 0xf69fc050 and size is 4096
+The value in next pointer 0xf69fc050 is 1
+The value in previous 0xf69fa6b8 header is 2456 and in previous foot is 2456
+The size of ptr is 4096 and previous is 2456
+case 3
+The free list pointer in coalesce is at 0xf69fa6b8
+The position outside chunk is 0xf69fa6b8
+The size needed to be allocated is 4080
+ within 6552
+The pred and succ is 0 and 0
+4080 is put at 0xf69fa6b4 and 0xf69fb6a0
+2472 is put at 0xf69fb6a4 and 0xf69fc048
+Allocating memory of size 4072 at line 402 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69fb6a8, the value is 2472
+The boundary is extended to 0xf69fd050 and size is 4096
+The value in next pointer 0xf69fd050 is 1
+The value in previous 0xf69fb6a8 header is 2472 and in previous foot is 2472
+The size of ptr is 4096 and previous is 2472
+case 3
+The free list pointer in coalesce is at 0xf69fb6a8
+The position outside chunk is 0xf69fb6a8
+The size needed to be allocated is 4080
+ within 6568
+The pred and succ is 0 and 0
+4080 is put at 0xf69fb6a4 and 0xf69fc690
+2488 is put at 0xf69fc694 and 0xf69fd048
+Allocating memory of size 4072 at line 403 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69fc698, the value is 2488
+The boundary is extended to 0xf69fe050 and size is 4096
+The value in next pointer 0xf69fe050 is 1
+The value in previous 0xf69fc698 header is 2488 and in previous foot is 2488
+The size of ptr is 4096 and previous is 2488
+case 3
+The free list pointer in coalesce is at 0xf69fc698
+The position outside chunk is 0xf69fc698
+The size needed to be allocated is 4080
+ within 6584
+The pred and succ is 0 and 0
+4080 is put at 0xf69fc694 and 0xf69fd680
+2504 is put at 0xf69fd684 and 0xf69fe048
+Allocating memory of size 4072 at line 404 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69fd688, the value is 2504
+The boundary is extended to 0xf69ff050 and size is 4096
+The value in next pointer 0xf69ff050 is 1
+The value in previous 0xf69fd688 header is 2504 and in previous foot is 2504
+The size of ptr is 4096 and previous is 2504
+case 3
+The free list pointer in coalesce is at 0xf69fd688
+The position outside chunk is 0xf69fd688
+The size needed to be allocated is 4080
+ within 6600
+The pred and succ is 0 and 0
+4080 is put at 0xf69fd684 and 0xf69fe670
+2520 is put at 0xf69fe674 and 0xf69ff048
+Allocating memory of size 4072 at line 405 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69fe678, the value is 2520
+The boundary is extended to 0xf6a00050 and size is 4096
+The value in next pointer 0xf6a00050 is 1
+The value in previous 0xf69fe678 header is 2520 and in previous foot is 2520
+The size of ptr is 4096 and previous is 2520
+case 3
+The free list pointer in coalesce is at 0xf69fe678
+The position outside chunk is 0xf69fe678
+The size needed to be allocated is 4080
+ within 6616
+The pred and succ is 0 and 0
+4080 is put at 0xf69fe674 and 0xf69ff660
+2536 is put at 0xf69ff664 and 0xf6a00048
+Allocating memory of size 4072 at line 406 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69ff668, the value is 2536
+The boundary is extended to 0xf6a01050 and size is 4096
+The value in next pointer 0xf6a01050 is 1
+The value in previous 0xf69ff668 header is 2536 and in previous foot is 2536
+The size of ptr is 4096 and previous is 2536
+case 3
+The free list pointer in coalesce is at 0xf69ff668
+The position outside chunk is 0xf69ff668
+The size needed to be allocated is 4080
+ within 6632
+The pred and succ is 0 and 0
+4080 is put at 0xf69ff664 and 0xf6a00650
+2552 is put at 0xf6a00654 and 0xf6a01048
+Allocating memory of size 4072 at line 407 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a00658, the value is 2552
+The boundary is extended to 0xf6a02050 and size is 4096
+The value in next pointer 0xf6a02050 is 1
+The value in previous 0xf6a00658 header is 2552 and in previous foot is 2552
+The size of ptr is 4096 and previous is 2552
+case 3
+The free list pointer in coalesce is at 0xf6a00658
+The position outside chunk is 0xf6a00658
+The size needed to be allocated is 4080
+ within 6648
+The pred and succ is 0 and 0
+4080 is put at 0xf6a00654 and 0xf6a01640
+2568 is put at 0xf6a01644 and 0xf6a02048
+Allocating memory of size 4072 at line 408 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a01648, the value is 2568
+The boundary is extended to 0xf6a03050 and size is 4096
+The value in next pointer 0xf6a03050 is 1
+The value in previous 0xf6a01648 header is 2568 and in previous foot is 2568
+The size of ptr is 4096 and previous is 2568
+case 3
+The free list pointer in coalesce is at 0xf6a01648
+The position outside chunk is 0xf6a01648
+The size needed to be allocated is 4080
+ within 6664
+The pred and succ is 0 and 0
+4080 is put at 0xf6a01644 and 0xf6a02630
+2584 is put at 0xf6a02634 and 0xf6a03048
+Allocating memory of size 4072 at line 409 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a02638, the value is 2584
+The boundary is extended to 0xf6a04050 and size is 4096
+The value in next pointer 0xf6a04050 is 1
+The value in previous 0xf6a02638 header is 2584 and in previous foot is 2584
+The size of ptr is 4096 and previous is 2584
+case 3
+The free list pointer in coalesce is at 0xf6a02638
+The position outside chunk is 0xf6a02638
+The size needed to be allocated is 4080
+ within 6680
+The pred and succ is 0 and 0
+4080 is put at 0xf6a02634 and 0xf6a03620
+2600 is put at 0xf6a03624 and 0xf6a04048
+Allocating memory of size 4072 at line 410 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a03628, the value is 2600
+The boundary is extended to 0xf6a05050 and size is 4096
+The value in next pointer 0xf6a05050 is 1
+The value in previous 0xf6a03628 header is 2600 and in previous foot is 2600
+The size of ptr is 4096 and previous is 2600
+case 3
+The free list pointer in coalesce is at 0xf6a03628
+The position outside chunk is 0xf6a03628
+The size needed to be allocated is 4080
+ within 6696
+The pred and succ is 0 and 0
+4080 is put at 0xf6a03624 and 0xf6a04610
+2616 is put at 0xf6a04614 and 0xf6a05048
+Allocating memory of size 4072 at line 411 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a04618, the value is 2616
+The boundary is extended to 0xf6a06050 and size is 4096
+The value in next pointer 0xf6a06050 is 1
+The value in previous 0xf6a04618 header is 2616 and in previous foot is 2616
+The size of ptr is 4096 and previous is 2616
+case 3
+The free list pointer in coalesce is at 0xf6a04618
+The position outside chunk is 0xf6a04618
+The size needed to be allocated is 4080
+ within 6712
+The pred and succ is 0 and 0
+4080 is put at 0xf6a04614 and 0xf6a05600
+2632 is put at 0xf6a05604 and 0xf6a06048
+Allocating memory of size 4072 at line 412 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a05608, the value is 2632
+The boundary is extended to 0xf6a07050 and size is 4096
+The value in next pointer 0xf6a07050 is 1
+The value in previous 0xf6a05608 header is 2632 and in previous foot is 2632
+The size of ptr is 4096 and previous is 2632
+case 3
+The free list pointer in coalesce is at 0xf6a05608
+The position outside chunk is 0xf6a05608
+The size needed to be allocated is 4080
+ within 6728
+The pred and succ is 0 and 0
+4080 is put at 0xf6a05604 and 0xf6a065f0
+2648 is put at 0xf6a065f4 and 0xf6a07048
+Allocating memory of size 4072 at line 413 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a065f8, the value is 2648
+The boundary is extended to 0xf6a08050 and size is 4096
+The value in next pointer 0xf6a08050 is 1
+The value in previous 0xf6a065f8 header is 2648 and in previous foot is 2648
+The size of ptr is 4096 and previous is 2648
+case 3
+The free list pointer in coalesce is at 0xf6a065f8
+The position outside chunk is 0xf6a065f8
+The size needed to be allocated is 4080
+ within 6744
+The pred and succ is 0 and 0
+4080 is put at 0xf6a065f4 and 0xf6a075e0
+2664 is put at 0xf6a075e4 and 0xf6a08048
+Allocating memory of size 4072 at line 414 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a075e8, the value is 2664
+The boundary is extended to 0xf6a09050 and size is 4096
+The value in next pointer 0xf6a09050 is 1
+The value in previous 0xf6a075e8 header is 2664 and in previous foot is 2664
+The size of ptr is 4096 and previous is 2664
+case 3
+The free list pointer in coalesce is at 0xf6a075e8
+The position outside chunk is 0xf6a075e8
+The size needed to be allocated is 4080
+ within 6760
+The pred and succ is 0 and 0
+4080 is put at 0xf6a075e4 and 0xf6a085d0
+2680 is put at 0xf6a085d4 and 0xf6a09048
+Allocating memory of size 4072 at line 415 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a085d8, the value is 2680
+The boundary is extended to 0xf6a0a050 and size is 4096
+The value in next pointer 0xf6a0a050 is 1
+The value in previous 0xf6a085d8 header is 2680 and in previous foot is 2680
+The size of ptr is 4096 and previous is 2680
+case 3
+The free list pointer in coalesce is at 0xf6a085d8
+The position outside chunk is 0xf6a085d8
+The size needed to be allocated is 4080
+ within 6776
+The pred and succ is 0 and 0
+4080 is put at 0xf6a085d4 and 0xf6a095c0
+2696 is put at 0xf6a095c4 and 0xf6a0a048
+Allocating memory of size 4072 at line 416 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a095c8, the value is 2696
+The boundary is extended to 0xf6a0b050 and size is 4096
+The value in next pointer 0xf6a0b050 is 1
+The value in previous 0xf6a095c8 header is 2696 and in previous foot is 2696
+The size of ptr is 4096 and previous is 2696
+case 3
+The free list pointer in coalesce is at 0xf6a095c8
+The position outside chunk is 0xf6a095c8
+The size needed to be allocated is 4080
+ within 6792
+The pred and succ is 0 and 0
+4080 is put at 0xf6a095c4 and 0xf6a0a5b0
+2712 is put at 0xf6a0a5b4 and 0xf6a0b048
+Allocating memory of size 4072 at line 417 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a0a5b8, the value is 2712
+The boundary is extended to 0xf6a0c050 and size is 4096
+The value in next pointer 0xf6a0c050 is 1
+The value in previous 0xf6a0a5b8 header is 2712 and in previous foot is 2712
+The size of ptr is 4096 and previous is 2712
+case 3
+The free list pointer in coalesce is at 0xf6a0a5b8
+The position outside chunk is 0xf6a0a5b8
+The size needed to be allocated is 4080
+ within 6808
+The pred and succ is 0 and 0
+4080 is put at 0xf6a0a5b4 and 0xf6a0b5a0
+2728 is put at 0xf6a0b5a4 and 0xf6a0c048
+Allocating memory of size 4072 at line 418 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a0b5a8, the value is 2728
+The boundary is extended to 0xf6a0d050 and size is 4096
+The value in next pointer 0xf6a0d050 is 1
+The value in previous 0xf6a0b5a8 header is 2728 and in previous foot is 2728
+The size of ptr is 4096 and previous is 2728
+case 3
+The free list pointer in coalesce is at 0xf6a0b5a8
+The position outside chunk is 0xf6a0b5a8
+The size needed to be allocated is 4080
+ within 6824
+The pred and succ is 0 and 0
+4080 is put at 0xf6a0b5a4 and 0xf6a0c590
+2744 is put at 0xf6a0c594 and 0xf6a0d048
+Allocating memory of size 4072 at line 419 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a0c598, the value is 2744
+The boundary is extended to 0xf6a0e050 and size is 4096
+The value in next pointer 0xf6a0e050 is 1
+The value in previous 0xf6a0c598 header is 2744 and in previous foot is 2744
+The size of ptr is 4096 and previous is 2744
+case 3
+The free list pointer in coalesce is at 0xf6a0c598
+The position outside chunk is 0xf6a0c598
+The size needed to be allocated is 4080
+ within 6840
+The pred and succ is 0 and 0
+4080 is put at 0xf6a0c594 and 0xf6a0d580
+2760 is put at 0xf6a0d584 and 0xf6a0e048
+Allocating memory of size 4072 at line 420 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a0d588, the value is 2760
+The boundary is extended to 0xf6a0f050 and size is 4096
+The value in next pointer 0xf6a0f050 is 1
+The value in previous 0xf6a0d588 header is 2760 and in previous foot is 2760
+The size of ptr is 4096 and previous is 2760
+case 3
+The free list pointer in coalesce is at 0xf6a0d588
+The position outside chunk is 0xf6a0d588
+The size needed to be allocated is 4080
+ within 6856
+The pred and succ is 0 and 0
+4080 is put at 0xf6a0d584 and 0xf6a0e570
+2776 is put at 0xf6a0e574 and 0xf6a0f048
+Allocating memory of size 4072 at line 421 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a0e578, the value is 2776
+The boundary is extended to 0xf6a10050 and size is 4096
+The value in next pointer 0xf6a10050 is 1
+The value in previous 0xf6a0e578 header is 2776 and in previous foot is 2776
+The size of ptr is 4096 and previous is 2776
+case 3
+The free list pointer in coalesce is at 0xf6a0e578
+The position outside chunk is 0xf6a0e578
+The size needed to be allocated is 4080
+ within 6872
+The pred and succ is 0 and 0
+4080 is put at 0xf6a0e574 and 0xf6a0f560
+2792 is put at 0xf6a0f564 and 0xf6a10048
+Allocating memory of size 4072 at line 422 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a0f568, the value is 2792
+The boundary is extended to 0xf6a11050 and size is 4096
+The value in next pointer 0xf6a11050 is 1
+The value in previous 0xf6a0f568 header is 2792 and in previous foot is 2792
+The size of ptr is 4096 and previous is 2792
+case 3
+The free list pointer in coalesce is at 0xf6a0f568
+The position outside chunk is 0xf6a0f568
+The size needed to be allocated is 4080
+ within 6888
+The pred and succ is 0 and 0
+4080 is put at 0xf6a0f564 and 0xf6a10550
+2808 is put at 0xf6a10554 and 0xf6a11048
+Allocating memory of size 4072 at line 423 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a10558, the value is 2808
+The boundary is extended to 0xf6a12050 and size is 4096
+The value in next pointer 0xf6a12050 is 1
+The value in previous 0xf6a10558 header is 2808 and in previous foot is 2808
+The size of ptr is 4096 and previous is 2808
+case 3
+The free list pointer in coalesce is at 0xf6a10558
+The position outside chunk is 0xf6a10558
+The size needed to be allocated is 4080
+ within 6904
+The pred and succ is 0 and 0
+4080 is put at 0xf6a10554 and 0xf6a11540
+2824 is put at 0xf6a11544 and 0xf6a12048
+Allocating memory of size 4072 at line 424 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a11548, the value is 2824
+The boundary is extended to 0xf6a13050 and size is 4096
+The value in next pointer 0xf6a13050 is 1
+The value in previous 0xf6a11548 header is 2824 and in previous foot is 2824
+The size of ptr is 4096 and previous is 2824
+case 3
+The free list pointer in coalesce is at 0xf6a11548
+The position outside chunk is 0xf6a11548
+The size needed to be allocated is 4080
+ within 6920
+The pred and succ is 0 and 0
+4080 is put at 0xf6a11544 and 0xf6a12530
+2840 is put at 0xf6a12534 and 0xf6a13048
+Allocating memory of size 4072 at line 425 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a12538, the value is 2840
+The boundary is extended to 0xf6a14050 and size is 4096
+The value in next pointer 0xf6a14050 is 1
+The value in previous 0xf6a12538 header is 2840 and in previous foot is 2840
+The size of ptr is 4096 and previous is 2840
+case 3
+The free list pointer in coalesce is at 0xf6a12538
+The position outside chunk is 0xf6a12538
+The size needed to be allocated is 4080
+ within 6936
+The pred and succ is 0 and 0
+4080 is put at 0xf6a12534 and 0xf6a13520
+2856 is put at 0xf6a13524 and 0xf6a14048
+Allocating memory of size 4072 at line 426 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a13528, the value is 2856
+The boundary is extended to 0xf6a15050 and size is 4096
+The value in next pointer 0xf6a15050 is 1
+The value in previous 0xf6a13528 header is 2856 and in previous foot is 2856
+The size of ptr is 4096 and previous is 2856
+case 3
+The free list pointer in coalesce is at 0xf6a13528
+The position outside chunk is 0xf6a13528
+The size needed to be allocated is 4080
+ within 6952
+The pred and succ is 0 and 0
+4080 is put at 0xf6a13524 and 0xf6a14510
+2872 is put at 0xf6a14514 and 0xf6a15048
+The size that is freed is 4080 and the position is at 0xf6a04618 at line 427 fffffffff
+The value in next pointer 0xf6a05608 is 4081
+case 2
+The free list pointer in coalesce is at 0xf6a04618
+The size that is freed is 4080 and the position is at 0xf6a11548 at line 428 fffffffff
+The value in next pointer 0xf6a12538 is 4081
+case 2
+The free list pointer in coalesce is at 0xf6a11548
+Allocating memory of size 4072 at line 429 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a11548, the value is 4080
+The position inside chunk is 0xf6a11548
+The size needed to be allocated is 4080
+ within 4080
+The pred and succ is 0 and f6a04618
+4080 is put at 0xf6a11544 and 0xf6a12530
+Allocating memory of size 4072 at line 430 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a04618, the value is 4080
+The position inside chunk is 0xf6a04618
+The size needed to be allocated is 4080
+ within 4080
+The pred and succ is 0 and f6a14518
+4080 is put at 0xf6a04614 and 0xf6a05600
+Allocating memory of size 4072 at line 431 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a14518, the value is 2872
+The boundary is extended to 0xf6a16050 and size is 4096
+The value in next pointer 0xf6a16050 is 1
+The value in previous 0xf6a14518 header is 2872 and in previous foot is 2872
+The size of ptr is 4096 and previous is 2872
+case 3
+The free list pointer in coalesce is at 0xf6a14518
+The position outside chunk is 0xf6a14518
+The size needed to be allocated is 4080
+ within 6968
+The pred and succ is 0 and 0
+4080 is put at 0xf6a14514 and 0xf6a15500
+2888 is put at 0xf6a15504 and 0xf6a16048
+Allocating memory of size 4072 at line 432 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a15508, the value is 2888
+The boundary is extended to 0xf6a17050 and size is 4096
+The value in next pointer 0xf6a17050 is 1
+The value in previous 0xf6a15508 header is 2888 and in previous foot is 2888
+The size of ptr is 4096 and previous is 2888
+case 3
+The free list pointer in coalesce is at 0xf6a15508
+The position outside chunk is 0xf6a15508
+The size needed to be allocated is 4080
+ within 6984
+The pred and succ is 0 and 0
+4080 is put at 0xf6a15504 and 0xf6a164f0
+2904 is put at 0xf6a164f4 and 0xf6a17048
+Allocating memory of size 4072 at line 433 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a164f8, the value is 2904
+The boundary is extended to 0xf6a18050 and size is 4096
+The value in next pointer 0xf6a18050 is 1
+The value in previous 0xf6a164f8 header is 2904 and in previous foot is 2904
+The size of ptr is 4096 and previous is 2904
+case 3
+The free list pointer in coalesce is at 0xf6a164f8
+The position outside chunk is 0xf6a164f8
+The size needed to be allocated is 4080
+ within 7000
+The pred and succ is 0 and 0
+4080 is put at 0xf6a164f4 and 0xf6a174e0
+2920 is put at 0xf6a174e4 and 0xf6a18048
+Allocating memory of size 4072 at line 434 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a174e8, the value is 2920
+The boundary is extended to 0xf6a19050 and size is 4096
+The value in next pointer 0xf6a19050 is 1
+The value in previous 0xf6a174e8 header is 2920 and in previous foot is 2920
+The size of ptr is 4096 and previous is 2920
+case 3
+The free list pointer in coalesce is at 0xf6a174e8
+The position outside chunk is 0xf6a174e8
+The size needed to be allocated is 4080
+ within 7016
+The pred and succ is 0 and 0
+4080 is put at 0xf6a174e4 and 0xf6a184d0
+2936 is put at 0xf6a184d4 and 0xf6a19048
+Allocating memory of size 4072 at line 435 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a184d8, the value is 2936
+The boundary is extended to 0xf6a1a050 and size is 4096
+The value in next pointer 0xf6a1a050 is 1
+The value in previous 0xf6a184d8 header is 2936 and in previous foot is 2936
+The size of ptr is 4096 and previous is 2936
+case 3
+The free list pointer in coalesce is at 0xf6a184d8
+The position outside chunk is 0xf6a184d8
+The size needed to be allocated is 4080
+ within 7032
+The pred and succ is 0 and 0
+4080 is put at 0xf6a184d4 and 0xf6a194c0
+2952 is put at 0xf6a194c4 and 0xf6a1a048
+Allocating memory of size 4072 at line 436 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf6a194c8, the value is 2952
+The boundary is extended to 0xf6a1b050 and size is 4096
+The value in next pointer 0xf6a1b050 is 1
+The value in previous 0xf6a194c8 header is 2952 and in previous foot is 2952
+The size of ptr is 4096 and previous is 2952
+case 3
+The free list pointer in coalesce is at 0xf6a194c8
+The position outside chunk is 0xf6a194c8
+The size needed to be allocated is 4080
+ within 7048
+The pred and succ is 0 and 0
+4080 is put at 0xf6a194c4 and 0xf6a1a4b0
+2968 is put at 0xf6a1a4b4 and 0xf6a1b048
+The size that is freed is 4080 and the position is at 0xf6a14518 at line 437 fffffffff
+The value in next pointer 0xf6a15508 is 4081
+case 2
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf6a04618 at line 438 fffffffff
+The value in next pointer 0xf6a05608 is 0
+The pred and succ is 91919191 and 91919191
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf6a11548 at line 439 fffffffff
+The value in next pointer 0xf6a12538 is 0
+The pred and succ is 9e9e9e9e and 9e9e9e9e
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf6a095c8 at line 440 fffffffff
+The value in next pointer 0xf6a0a5b8 is 4081
+case 2
+The free list pointer in coalesce is at 0xf6a095c8
+The size that is freed is 4080 and the position is at 0xf69fc698 at line 441 fffffffff
+The value in next pointer 0xf69fd688 is 4081
+case 2
+The free list pointer in coalesce is at 0xf69fc698
+The size that is freed is 4080 and the position is at 0xf69f76e8 at line 442 fffffffff
+The value in next pointer 0xf69f86d8 is 4081
+case 2
+The free list pointer in coalesce is at 0xf69f76e8
+The size that is freed is 4080 and the position is at 0xf69f2738 at line 443 fffffffff
+The value in next pointer 0xf69f3728 is 4081
+case 2
+The free list pointer in coalesce is at 0xf69f2738
+The size that is freed is 4080 and the position is at 0xf69e5808 at line 444 fffffffff
+The value in next pointer 0xf69e67f8 is 4081
+case 2
+The free list pointer in coalesce is at 0xf69e5808
+The size that is freed is 4080 and the position is at 0xf6a13528 at line 445 fffffffff
+The value in next pointer 0xf6a14518 is 4080
+case 5
+The free list pointer in coalesce is at 0xf69e5808
+The size that is freed is 8160 and the position is at 0xf6a12538 at line 446 fffffffff
+The value in next pointer 0xf6a14518 is 4080
+case 5
+The free list pointer in coalesce is at 0xf69e5808
+The size that is freed is 4080 and the position is at 0xf6a10558 at line 447 fffffffff
+The value in next pointer 0xf6a11548 is 16320
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a10558
+The size that is freed is 4080 and the position is at 0xf6a0f568 at line 448 fffffffff
+The value in next pointer 0xf6a10558 is 20400
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a0f568
+The size that is freed is 4080 and the position is at 0xf6a0e578 at line 449 fffffffff
+The value in next pointer 0xf6a0f568 is 24480
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a0e578
+The size that is freed is 4080 and the position is at 0xf6a0d588 at line 450 fffffffff
+The value in next pointer 0xf6a0e578 is 28560
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a0d588
+The size that is freed is 4080 and the position is at 0xf6a0c598 at line 451 fffffffff
+The value in next pointer 0xf6a0d588 is 32640
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a0c598
+The size that is freed is 4080 and the position is at 0xf6a0b5a8 at line 452 fffffffff
+The value in next pointer 0xf6a0c598 is 36720
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a0b5a8
+The size that is freed is 4080 and the position is at 0xf6a0a5b8 at line 453 fffffffff
+The value in next pointer 0xf6a0b5a8 is 40800
+case 5
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf6a085d8 at line 454 fffffffff
+The value in next pointer 0xf6a095c8 is 48960
+The pred and succ is f69fc698 and f6a1a4b8
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf6a075e8 at line 455 fffffffff
+The value in next pointer 0xf6a085d8 is 53040
+The pred and succ is f69fc698 and f6a1a4b8
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf6a065f8 at line 456 fffffffff
+The value in next pointer 0xf6a075e8 is 57120
+case 5
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 61200 and the position is at 0xf6a05608 at line 457 fffffffff
+The value in next pointer 0xf6a14518 is 4080
+case 5
+The free list pointer in coalesce is at 0xf6a1a4b8
+The size that is freed is 4080 and the position is at 0xf6a03628 at line 458 fffffffff
+The value in next pointer 0xf6a04618 is 69360
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a03628
+The size that is freed is 4080 and the position is at 0xf6a02638 at line 459 fffffffff
+The value in next pointer 0xf6a03628 is 73440
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a02638
+The size that is freed is 4080 and the position is at 0xf6a01648 at line 460 fffffffff
+The value in next pointer 0xf6a02638 is 77520
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a01648
+The size that is freed is 4080 and the position is at 0xf6a00658 at line 461 fffffffff
+The value in next pointer 0xf6a01648 is 81600
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf6a00658
+The size that is freed is 4080 and the position is at 0xf69ff668 at line 462 fffffffff
+The value in next pointer 0xf6a00658 is 85680
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf69ff668
+The size that is freed is 4080 and the position is at 0xf69fe678 at line 463 fffffffff
+The value in next pointer 0xf69ff668 is 89760
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf69fe678
+The size that is freed is 4080 and the position is at 0xf69fd688 at line 464 fffffffff
+The value in next pointer 0xf69fe678 is 93840
+case 5
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69fb6a8 at line 465 fffffffff
+The value in next pointer 0xf69fc698 is 102000
+The pred and succ is f69f76e8 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69fa6b8 at line 466 fffffffff
+The value in next pointer 0xf69fb6a8 is 106080
+The pred and succ is f69f76e8 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69f96c8 at line 467 fffffffff
+The value in next pointer 0xf69fa6b8 is 110160
+The pred and succ is f69f76e8 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69f86d8 at line 468 fffffffff
+The value in next pointer 0xf69f96c8 is 114240
+case 5
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69f66f8 at line 469 fffffffff
+The value in next pointer 0xf69f76e8 is 122400
+The pred and succ is f69f2738 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69f5708 at line 470 fffffffff
+The value in next pointer 0xf69f66f8 is 126480
+The pred and succ is f69f2738 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69f4718 at line 471 fffffffff
+The value in next pointer 0xf69f5708 is 130560
+The pred and succ is f69f2738 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69f3728 at line 472 fffffffff
+The value in next pointer 0xf69f4718 is 134640
+case 5
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69f1748 at line 473 fffffffff
+The value in next pointer 0xf69f2738 is 142800
+The pred and succ is f69e5808 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69f0758 at line 474 fffffffff
+The value in next pointer 0xf69f1748 is 146880
+The pred and succ is f69e5808 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69ef768 at line 475 fffffffff
+The value in next pointer 0xf69f0758 is 150960
+The pred and succ is f69e5808 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69ee778 at line 476 fffffffff
+The value in next pointer 0xf69ef768 is 155040
+The pred and succ is f69e5808 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69ed788 at line 477 fffffffff
+The value in next pointer 0xf69ee778 is 159120
+The pred and succ is f69e5808 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69ec798 at line 478 fffffffff
+The value in next pointer 0xf69ed788 is 163200
+The pred and succ is f69e5808 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69eb7a8 at line 479 fffffffff
+The value in next pointer 0xf69ec798 is 167280
+The pred and succ is f69e5808 and f6a05608
+case 4
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69e97c8 at line 480 fffffffff
+The value in next pointer 0xf69ea7b8 is 4081
+case 2
+The free list pointer in coalesce is at 0xf69e97c8
+The size that is freed is 4080 and the position is at 0xf69e87d8 at line 481 fffffffff
+The value in next pointer 0xf69e97c8 is 4080
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf69e87d8
+The size that is freed is 4080 and the position is at 0xf69e77e8 at line 482 fffffffff
+The value in next pointer 0xf69e87d8 is 8160
+The pred and succ is 0 and f6a14518
+case 4
+The free list pointer in coalesce is at 0xf69e77e8
+The size that is freed is 4080 and the position is at 0xf69e67f8 at line 483 fffffffff
+The value in next pointer 0xf69e77e8 is 12240
+case 5
+The free list pointer in coalesce is at 0xf6a14518
+The size that is freed is 4080 and the position is at 0xf69e4818 at line 484 fffffffff
+The value in next pointer 0xf69e5808 is 20400
+The pred and succ is 0 and f69eb7a8
+case 4
+The free list pointer in coalesce is at 0xf69e4818
+The size that is freed is 4080 and the position is at 0xf69e3828 at line 485 fffffffff
+The value in next pointer 0xf69e4818 is 24480
+The pred and succ is 0 and f69eb7a8
+case 4
+The free list pointer in coalesce is at 0xf69e3828
+The size that is freed is 4080 and the position is at 0xf69e27e8 at line 486 fffffffff
+The value in next pointer 0xf69e37d8 is 81
+case 2
+The free list pointer in coalesce is at 0xf69e27e8
+Allocating memory of size 4072 at line 487 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e27e8, the value is 4080
+The position inside chunk is 0xf69e27e8
+The size needed to be allocated is 4080
+ within 4080
+The pred and succ is 0 and f69e3828
+4080 is put at 0xf69e27e4 and 0xf69e37d0
+Allocating memory of size 4072 at line 488 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e3828, the value is 28560
+The position inside chunk is 0xf69e3828
+The size needed to be allocated is 4080
+ within 28560
+The pred and succ is 0 and f69eb7a8
+4080 is put at 0xf69e3824 and 0xf69e4810
+24480 is put at 0xf69e4814 and 0xf69ea7b0
+The size that is freed is 4080 and the position is at 0xf69e3828 at line 489 fffffffff
+The value in next pointer 0xf69e4818 is 24480
+case 5
+The free list pointer in coalesce is at 0xf69e37d8
+Allocating memory of size 4072 at line 490 $$$$$$$$$$$$$$$
+Is valid 0 at position 0xf69e37d8, the value is 28560
+The position inside chunk is 0xf69e37d8
+The size needed to be allocated is 4080
+ within 28560
+The pred and succ is 0 and f69eb7a8
+4080 is put at 0xf69e37d4 and 0xf69e47c0
+24480 is put at 0xf69e47c4 and 0xf69ea760
+ERROR [trace 0, line 495]: Payload (0xf69e37d8:0xf69e47bf) overlaps another payload (0xf69e37d8:0xf69e381f)
+
+
+Results for mm malloc:
+trace  valid  util     ops      secs  Kops
+ 0        no     -       -         -     -
+Total            -       -         -     -
+
+Terminated with 1 errors

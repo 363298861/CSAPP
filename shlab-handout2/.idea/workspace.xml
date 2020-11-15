@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a82cfaab-aa44-493a-99a0-2967d27f6bdd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ProjectId" id="1bFDBUbwsp5Y42CxeoxeFZ72FDH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a82cfaab-aa44-493a-99a0-2967d27f6bdd" name="Default Changelist" comment="" />
+      <created>1588218812626</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588218812626</updated>
+      <workItem from="1588218813929" duration="703000" />
+      <workItem from="1588237371778" duration="656000" />
+      <workItem from="1588383114616" duration="13000" />
+      <workItem from="1588817903135" duration="20435000" />
+      <workItem from="1588999365236" duration="5521000" />
+      <workItem from="1589077229542" duration="9600000" />
+      <workItem from="1589127817477" duration="13000" />
+      <workItem from="1589167529063" duration="191000" />
+      <workItem from="1589189981891" duration="1308000" />
+      <workItem from="1589251974253" duration="4297000" />
+      <workItem from="1589527226602" duration="1979000" />
+      <workItem from="1590284950953" duration="477000" />
+      <workItem from="1591147558596" duration="14560000" />
+      <workItem from="1591233700050" duration="602000" />
+      <workItem from="1591241477964" duration="12669000" />
+      <workItem from="1591327116271" duration="272000" />
+      <workItem from="1591343291794" duration="1382000" />
+      <workItem from="1591498120789" duration="7534000" />
+      <workItem from="1596270116179" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="708" y="353" width="583" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591172185690">
+      <screen x="83" y="27" width="1837" height="1052" />
+    </state>
+    <state x="708" y="353" width="583" height="398" key="#com.intellij.fileTypes.FileTypeChooser/83.27.1837.1052@83.27.1837.1052" timestamp="1591172185690" />
+    <state x="787" y="290" width="424" height="492" key="FileChooserDialogImpl" timestamp="1590285426769">
+      <screen x="83" y="27" width="1837" height="1052" />
+    </state>
+    <state x="787" y="290" width="424" height="492" key="FileChooserDialogImpl/83.27.1837.1052@83.27.1837.1052" timestamp="1590285426769" />
+    <state x="661" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1596270116280">
+      <screen x="83" y="27" width="1837" height="1052" />
+    </state>
+    <state x="661" y="265" key="com.intellij.ide.util.TipDialog/83.27.1837.1052@83.27.1837.1052" timestamp="1596270116279" />
+  </component>
+</project>
